@@ -1,0 +1,458 @@
+[2019-09-16 09:20:08.100] [info] [App] Ready
+[2019-09-16 09:20:08.155] [info] Checking for updates...
+[2019-09-16 09:20:08.161] [info] [App] Starting daemon connections
+[2019-09-16 09:20:08.470] [debug] [getAPIVersion]
+[2019-09-16 09:20:08.562] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-16 09:20:08.562] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-16 09:20:08.562] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-16 09:20:08.562] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-16 09:20:08.563] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-16 09:20:08.564] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-16 09:20:08.564] [info] [prepare] Preparing and starting the daemon
+[2019-09-16 09:20:08.564] [debug] [ensurePortNotTaken]
+[2019-09-16 09:20:08.565] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-16 09:20:08.565] [debug] [ensuresIPFSInitialised]
+[2019-09-16 09:20:08.567] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'init' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-16 09:20:08.581] [debug] [ensuresIPFSInitialised] IPFS Daemon: initializing IPFS node at /home/afropunk/.config/Siderus Orion/ipfs-repo
+
+[2019-09-16 09:20:08.582] [debug] [ensuresIPFSInitialised] IPFS Daemon: generating 2048-bit RSA keypair...
+[2019-09-16 09:20:08.688] [debug] [ensuresIPFSInitialised] IPFS Daemon: done
+peer identity: QmdxyLaez31rcGKqFmwBR318ZMnKXtStAdYrNkY3Xq2rVy
+
+[2019-09-16 09:20:08.942] [debug] [ensuresIPFSInitialised] IPFS Daemon: to get started, enter:
+
+	ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
+
+
+[2019-09-16 09:20:09.005] [info] [prepare] Checking the IPFS repository
+[2019-09-16 09:20:09.005] [debug] [ensureRepoMigrated]
+[2019-09-16 09:20:09.005] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-16 09:20:09.036] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-16 09:20:09.036] [info] [prepare] Configuring IPFS daemon
+[2019-09-16 09:20:09.037] [debug] [ensureDaemonConfigured]
+[2019-09-16 09:20:09.039] [info] [prepare] IPFS Daemon: Starting
+[2019-09-16 09:20:09.039] [debug] [startIPFSDaemon]
+[2019-09-16 09:20:09.039] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-16 09:20:09.045] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-21098pdHPBHgk4ctt
+[2019-09-16 09:20:09.045] [info] Waiting for the API to be ready
+[2019-09-16 09:20:09.054] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-16 09:20:10.768] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-16 09:20:10.770] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
+Daemon is ready
+
+[2019-09-16 09:20:14.047] [info] [waitForAPIReady] Waiting for API
+[2019-09-16 09:20:16.051] [debug] [getAPIVersion]
+[2019-09-16 09:20:16.067] [info] [waitForAPIReady] API Ready
+[2019-09-16 09:20:16.068] [info] [prepare] IPFS Daemon: Started
+[2019-09-16 09:20:17.071] [debug] [App] Adding included interface
+[2019-09-16 09:20:17.073] [debug] [App] Decompressing UI from /opt/Siderus Orion/resources/app/assets/ui.tar, to /tmp/tmp-2109825JnQS4tUqfV
+[2019-09-16 09:20:17.125] [debug] [App] Done decompressing
+[2019-09-16 09:20:17.817] [debug] [App] Added UI in IPFS: QmY6F5UEBNxB63nbNompNd48Nxum4nFihg2eVG4xU259FW
+[2019-09-16 09:20:17.872] [debug] [App] Fetching edge nodes of Siderus Network
+[2019-09-16 09:20:20.236] [debug] [App] Connecting to Siderus Network
+[2019-09-16 09:20:23.065] [debug] [App] Fetching CID for latest SPA
+[2019-09-16 09:20:23.468] [info] [App] Latest SPA version: /ipfs/QmUfbdd62b63ReMLWDVTQuVaQS4X5ddK52h1LfW1zxdc4o
+[2019-09-16 09:20:23.469] [debug] [App] Fetching Dag for: /ipfs/QmUfbdd62b63ReMLWDVTQuVaQS4X5ddK52h1LfW1zxdc4o
+[2019-09-16 09:20:23.562] [info] [App] Loading the Main Window
+[2019-09-16 09:20:24.036] [info] [App] The SPA is ready
+[2019-09-16 09:21:17.350] [info] [App] Active
+[2019-09-16 09:21:25.134] [debug] [Shell] Message from SPA:  { method: 'shellSettings/get' }
+[2019-09-16 09:21:25.136] [debug] [Shell] Sending to SPA:  { method: 'shellSettings/get', value: {} }
+[2019-09-16 09:22:35.815] [info] [App] Active
+[2019-09-16 09:23:27.602] [debug] [Shell] Message from SPA:  { method: 'shellSettings/get' }
+[2019-09-16 09:23:27.603] [debug] [Shell] Sending to SPA:  { method: 'shellSettings/get', value: {} }
+[2019-09-16 14:25:54.198] [debug] [startIPFSDaemon] IPFS Daemon: 
+Received interrupt signal, shutting down...
+(Hit ctrl-c again to force-shutdown the daemon.)
+Received another interrupt before graceful shutdown, terminating...
+
+[2019-09-16 14:25:54.205] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-16 14:25:55.892] [warn] [startIPFSDaemon] IPFS Closed: 255
+[2019-09-17 16:30:12.039] [info] [App] Ready
+[2019-09-17 16:30:12.110] [info] Checking for updates...
+[2019-09-17 16:30:12.117] [info] [App] Starting daemon connections
+[2019-09-17 16:30:12.602] [debug] [getAPIVersion]
+[2019-09-17 16:30:12.789] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-17 16:30:12.789] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-17 16:30:12.790] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-17 16:30:12.790] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-17 16:30:12.791] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-17 16:30:12.791] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-17 16:30:12.792] [info] [prepare] Preparing and starting the daemon
+[2019-09-17 16:30:12.793] [debug] [ensurePortNotTaken]
+[2019-09-17 16:30:12.794] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-17 16:30:12.794] [info] [prepare] Checking the IPFS repository
+[2019-09-17 16:30:12.795] [debug] [ensureRepoMigrated]
+[2019-09-17 16:30:12.795] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:30:12.918] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-17 16:30:12.919] [info] [prepare] Configuring IPFS daemon
+[2019-09-17 16:30:12.919] [debug] [ensureDaemonConfigured]
+[2019-09-17 16:30:12.922] [info] [prepare] IPFS Daemon: Starting
+[2019-09-17 16:30:12.922] [debug] [startIPFSDaemon]
+[2019-09-17 16:30:12.923] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:30:12.929] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-11002VU9UiK8pZKOj
+[2019-09-17 16:30:12.929] [info] Waiting for the API to be ready
+[2019-09-17 16:30:13.130] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-17 16:30:15.177] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-17 16:30:15.178] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+
+[2019-09-17 16:30:15.186] [debug] [startIPFSDaemon] IPFS Daemon: 
+
+[2019-09-17 16:30:15.188] [error] [startIPFSDaemon] IPFS Daemon Error: Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+[2019-09-17 16:30:15.195] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-17 16:30:26.117] [info] [waitForAPIReady] Waiting for API
+[2019-09-17 16:35:16.269] [info] [App] Ready
+[2019-09-17 16:35:16.323] [info] Checking for updates...
+[2019-09-17 16:35:16.328] [info] [App] Starting daemon connections
+[2019-09-17 16:35:16.625] [debug] [getAPIVersion]
+[2019-09-17 16:35:16.720] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-17 16:35:16.721] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-17 16:35:16.721] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-17 16:35:16.721] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-17 16:35:16.723] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-17 16:35:16.723] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-17 16:35:16.723] [info] [prepare] Preparing and starting the daemon
+[2019-09-17 16:35:16.724] [debug] [ensurePortNotTaken]
+[2019-09-17 16:35:16.725] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-17 16:35:16.725] [info] [prepare] Checking the IPFS repository
+[2019-09-17 16:35:16.726] [debug] [ensureRepoMigrated]
+[2019-09-17 16:35:16.726] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:35:16.756] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-17 16:35:16.756] [info] [prepare] Configuring IPFS daemon
+[2019-09-17 16:35:16.756] [debug] [ensureDaemonConfigured]
+[2019-09-17 16:35:16.760] [info] [prepare] IPFS Daemon: Starting
+[2019-09-17 16:35:16.760] [debug] [startIPFSDaemon]
+[2019-09-17 16:35:16.760] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:35:16.765] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-11573WOx483vDFbrd
+[2019-09-17 16:35:16.766] [info] Waiting for the API to be ready
+[2019-09-17 16:35:16.778] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-17 16:35:21.768] [info] [waitForAPIReady] Waiting for API
+[2019-09-17 16:35:21.803] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-17 16:35:21.805] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+
+[2019-09-17 16:35:21.814] [debug] [startIPFSDaemon] IPFS Daemon: 
+
+[2019-09-17 16:35:21.815] [error] [startIPFSDaemon] IPFS Daemon Error: Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+[2019-09-17 16:35:21.823] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-17 16:35:29.265] [debug] [getAPIVersion]
+[2019-09-17 16:36:36.060] [info] [App] Ready
+[2019-09-17 16:36:36.116] [info] Checking for updates...
+[2019-09-17 16:36:36.120] [info] [App] Starting daemon connections
+[2019-09-17 16:36:36.417] [debug] [getAPIVersion]
+[2019-09-17 16:36:36.504] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-17 16:36:36.505] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-17 16:36:36.505] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-17 16:36:36.505] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-17 16:36:36.506] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-17 16:36:36.507] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-17 16:36:36.507] [info] [prepare] Preparing and starting the daemon
+[2019-09-17 16:36:36.507] [debug] [ensurePortNotTaken]
+[2019-09-17 16:36:36.508] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-17 16:36:36.508] [info] [prepare] Checking the IPFS repository
+[2019-09-17 16:36:36.508] [debug] [ensureRepoMigrated]
+[2019-09-17 16:36:36.509] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:36:36.538] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-17 16:36:36.539] [info] [prepare] Configuring IPFS daemon
+[2019-09-17 16:36:36.539] [debug] [ensureDaemonConfigured]
+[2019-09-17 16:36:36.542] [info] [prepare] IPFS Daemon: Starting
+[2019-09-17 16:36:36.542] [debug] [startIPFSDaemon]
+[2019-09-17 16:36:36.543] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:36:36.547] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-117237nJSA25ZSRX7
+[2019-09-17 16:36:36.547] [info] Waiting for the API to be ready
+[2019-09-17 16:36:36.554] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-17 16:36:37.217] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-17 16:36:37.219] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+
+[2019-09-17 16:36:37.224] [debug] [startIPFSDaemon] IPFS Daemon: 
+
+[2019-09-17 16:36:37.225] [error] [startIPFSDaemon] IPFS Daemon Error: Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+[2019-09-17 16:36:37.230] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-17 16:37:19.457] [info] [waitForAPIReady] Waiting for API
+[2019-09-17 16:37:27.370] [info] [App] Ready
+[2019-09-17 16:37:27.424] [info] Checking for updates...
+[2019-09-17 16:37:27.428] [info] [App] Starting daemon connections
+[2019-09-17 16:37:27.735] [debug] [getAPIVersion]
+[2019-09-17 16:37:27.824] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-17 16:37:27.824] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-17 16:37:27.824] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-17 16:37:27.824] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-17 16:37:27.826] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-17 16:37:27.826] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-17 16:37:27.826] [info] [prepare] Preparing and starting the daemon
+[2019-09-17 16:37:27.826] [debug] [ensurePortNotTaken]
+[2019-09-17 16:37:27.827] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-17 16:37:27.827] [info] [prepare] Checking the IPFS repository
+[2019-09-17 16:37:27.828] [debug] [ensureRepoMigrated]
+[2019-09-17 16:37:27.828] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:37:27.858] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-17 16:37:27.858] [info] [prepare] Configuring IPFS daemon
+[2019-09-17 16:37:27.859] [debug] [ensureDaemonConfigured]
+[2019-09-17 16:37:27.862] [info] [prepare] IPFS Daemon: Starting
+[2019-09-17 16:37:27.862] [debug] [startIPFSDaemon]
+[2019-09-17 16:37:27.862] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:37:27.867] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-11891VDb4JOGNoB3y
+[2019-09-17 16:37:27.868] [info] Waiting for the API to be ready
+[2019-09-17 16:37:27.875] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-17 16:37:29.888] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-17 16:37:29.890] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+
+[2019-09-17 16:37:29.897] [debug] [startIPFSDaemon] IPFS Daemon: 
+
+[2019-09-17 16:37:29.898] [error] [startIPFSDaemon] IPFS Daemon Error: Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+[2019-09-17 16:37:29.904] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-17 16:43:55.910] [info] [App] Ready
+[2019-09-17 16:43:55.966] [info] Checking for updates...
+[2019-09-17 16:44:15.988] [info] [App] Starting daemon connections
+[2019-09-17 16:44:16.031] [warn] [App] No internet connection detected
+[2019-09-17 16:44:20.452] [debug] [getAPIVersion]
+[2019-09-17 16:44:20.550] [info] [shouldStartDaemon] IPFS_BINARY_PATH /opt/Siderus Orion/resources/app/go-ipfs/ipfs
+[2019-09-17 16:44:20.550] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations
+[2019-09-17 16:44:20.551] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2019-09-17 16:44:20.551] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2019-09-17 16:44:20.552] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2019-09-17 16:44:20.553] [info] [shouldStartDaemon] IPFS_REPO_PATH /home/afropunk/.config/Siderus Orion/ipfs-repo
+[2019-09-17 16:44:20.553] [info] [prepare] Preparing and starting the daemon
+[2019-09-17 16:44:20.553] [debug] [ensurePortNotTaken]
+[2019-09-17 16:44:20.554] [debug] [isIPFSInitialised] /home/afropunk/.config/Siderus Orion/ipfs-repo/config
+[2019-09-17 16:44:20.555] [info] [prepare] Checking the IPFS repository
+[2019-09-17 16:44:20.555] [debug] [ensureRepoMigrated]
+[2019-09-17 16:44:20.556] [debug] [Daemon] Running "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations -y" { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:44:20.591] [debug] [Daemon] Completed "/opt/Siderus Orion/resources/app/fs-repo-migrations/fs-repo-migrations": ipfs migration: already at or above target version number
+
+[2019-09-17 16:44:20.591] [info] [prepare] Configuring IPFS daemon
+[2019-09-17 16:44:20.592] [debug] [ensureDaemonConfigured]
+[2019-09-17 16:44:20.595] [info] [prepare] IPFS Daemon: Starting
+[2019-09-17 16:44:20.596] [debug] [startIPFSDaemon]
+[2019-09-17 16:44:20.597] [debug] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs [ 'daemon',
+  '--init',
+  '--enable-pubsub-experiment',
+  '--routing=dhtclient',
+  '--api=/ip4/127.0.0.1/tcp/5001' ] { env:
+   { IPFS_PATH: '/home/afropunk/.config/Siderus Orion/ipfs-repo' } }
+[2019-09-17 16:44:20.604] [debug] [startIPFSDaemon] Logging IPFS Daemon logs in: /tmp/tmp-12347mq4j3PZWjTxQ
+[2019-09-17 16:44:20.604] [info] Waiting for the API to be ready
+[2019-09-17 16:44:20.611] [debug] [startIPFSDaemon] IPFS Daemon: Initializing daemon...
+go-ipfs version: 0.4.21-
+Repo version: 7
+System version: amd64/linux
+Golang version: go1.12.5
+
+[2019-09-17 16:44:25.610] [info] [waitForAPIReady] Waiting for API
+[2019-09-17 16:44:25.659] [debug] [startIPFSDaemon] IPFS Daemon: Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.0.4/tcp/4001
+Swarm listening on /ip4/192.168.250.1/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit
+
+[2019-09-17 16:44:25.660] [debug] [startIPFSDaemon] IPFS Daemon: Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.0.4/tcp/4001
+Swarm announcing /ip4/192.168.250.1/tcp/4001
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+WebUI: http://127.0.0.1:5001/webui
+
+[2019-09-17 16:44:25.660] [error] [startIPFSDaemon] IPFS Daemon Error: [0;37m16:44:25.659 [31mERROR [0;34m    swarm2: [0mswarm listener accept error: accept tcp6 [::]:4001: use of closed network connection [0;37mswarm_listen.go:78[0m
+
+[2019-09-17 16:44:25.663] [debug] [startIPFSDaemon] IPFS Daemon: 
+
+[2019-09-17 16:44:25.663] [error] [startIPFSDaemon] IPFS Daemon Error: Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+[2019-09-17 16:44:25.668] [warn] [SpawnIPFSCmd] /opt/Siderus Orion/resources/app/go-ipfs/ipfs Error: Command failed: /opt/Siderus Orion/resources/app/go-ipfs/ipfs daemon --init --enable-pubsub-experiment --routing=dhtclient --api=/ip4/127.0.0.1/tcp/5001
+[0;37m16:44:25.659 [31mERROR [0;34m    swarm2: [0mswarm listener accept error: accept tcp6 [::]:4001: use of closed network connection [0;37mswarm_listen.go:78[0m
+Error: serveHTTPGateway: manet.Listen(/ip4/127.0.0.1/tcp/8080) failed: listen tcp4 127.0.0.1:8080: bind: address already in use
+
+    at ChildProcess.exithandler (child_process.js:308:12)
+    at ChildProcess.emit (events.js:199:15)
+    at ChildProcess.EventEmitter.emit (domain.js:469:20)
+    at maybeClose (internal/child_process.js:998:16)
+    at Socket.<anonymous> (internal/child_process.js:403:11)
+    at Socket.emit (events.js:194:13)
+    at Socket.EventEmitter.emit (domain.js:469:20)
+    at Pipe.<anonymous> (net.js:593:12)
+[2019-09-17 16:44:34.448] [debug] [getAPIVersion]
+[2020-06-01 20:43:09.158] [info] [App] Ready
+[2020-06-01 20:43:09.252] [info] Checking for updates...
+[2020-06-01 20:43:09.265] [info] [App] Starting daemon connections
+[2020-06-01 20:43:11.438] [debug] [getAPIVersion]
+[2020-06-01 20:43:11.787] [warn] [shouldStartDaemon] Existing IPFS API on 127.0.0.1:5001 has been detected
+[2020-06-01 20:43:11.788] [warn] [shouldStartDaemon] IPFS Daemon already running
+[2020-06-01 20:43:11.789] [info] [shouldStartDaemon] IPFS_BINARY_PATH ipfs
+[2020-06-01 20:43:11.790] [info] [shouldStartDaemon] REPO_MIGRATIONS_BINARY_PATH /home/afropunk/fs-repo-migrations/fs-repo-migrations
+[2020-06-01 20:43:11.790] [info] [shouldStartDaemon] IPFS_MULTIADDR_API /ip4/127.0.0.1/tcp/5001
+[2020-06-01 20:43:11.791] [info] [shouldStartDaemon] IPFS_MULTIADDR_GATEWAY /ip4/127.0.0.1/tcp/8080
+[2020-06-01 20:43:11.797] [info] [shouldStartDaemon] IPFS_MULTIADDR_SWARM [ '/ip4/0.0.0.0/tcp/4001', '/ip6/::/tcp/4001' ]
+[2020-06-01 20:43:11.798] [info] [shouldStartDaemon] IPFS_REPO_PATH 
+[2020-06-01 20:43:11.799] [debug] [App] Adding included interface
+[2020-06-01 20:43:11.803] [debug] [App] Decompressing UI from /home/afropunk/assets/ui.tar, to /tmp/tmp-1006273ndbzNnPcTZPg
+[2020-06-01 20:43:11.810] [warn] [App] Failed to start Siderus Orion: Error: ENOENT: no such file or directory, copyfile '/home/afropunk/assets/ui.tar' -> '/tmp/tmp-1006273lGxDyWFb1cKT/ui.tar'
+    at copyFileSync (fs.js:1779:3)
+    at func (electron/js2c/asar.js:155:31)
+    at addIncludedUI (/opt/Siderus Orion/resources/app/src/lib/network/preload.js:101:24)
+    at /opt/Siderus Orion/resources/app/src/index.js:262:41
+    at processTicksAndRejections (internal/process/task_queues.js:86:5)

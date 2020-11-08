@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=whatsdesk &
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_ZA]=whatsdesk
+Name=whatsdesk
+Comment[en_ZA]=whatsapp client
+Comment=whatsapp client
+X-MATE-Autostart-Delay=3

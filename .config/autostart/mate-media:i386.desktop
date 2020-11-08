@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=mate-volume-control-applet
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_ZA]=mate media
+Name=mate media
+Comment[en_ZA]=
+Comment=

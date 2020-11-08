@@ -1,0 +1,34 @@
+[Account_ubuntupunk]
+Alias=ubuntupunk
+Api=1.1
+CountOfPosts=20
+Enable=true
+Followers=
+Friends=
+Host=https://api.twitter.com
+MicroBlog=choqok_twitter
+OAuthConsumerKey=VyXMf0O7CvciiUQjliYtYg
+OAuthToken=20401598-qrV9LRtaRNaszfyZRewa1QGfiI4F3kR4GrSEsrqTZ
+PostCharLimit=280
+Priority=0
+ReadOnly=false
+Search0=ubuntupunk,,,1,,,communitynetworks,,,1
+Search1=ubuntupunk,,,1,,,virtualcnafricasummit2020,,,1
+Search2=ubuntupunk,,,0,,,SwitchItOn,,,1
+SearchCount=3
+ShowInQuickPost=true
+Timelines=Home,Reply,Inbox,Outbox,Favorite,ReTweets,Public
+UserId=
+Username=
+UsingOAuth=true
+
+[Behavior]
+position=0,25
+shortenOnPaste=true
+shortenerPlugin=none
+
+[MainWindow]
+Height 1080=1006
+State=AAAA/wAAAAD9AAAAAAAABaAAAAOdAAAABAAAAAQAAAAIAAAACPwAAAACAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAwAAAAIAAAAmAGEAdQB0AGgAbwByAEYAaQBsAHQAZQByAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAAAAACIAdABlAHgAdABGAGkAbAB0AGUAcgBUAG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=1440

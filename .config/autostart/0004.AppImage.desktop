@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=0004.AppImage
+Comment=0004.AppImagestartup script
+Exec=/run/user/1000/appimagelauncherfs/0004.AppImage
+StartupNotify=false
+Terminal=false
+X-GNOME-Autostart-enabled=false
+X-MATE-Autostart-enabled=false

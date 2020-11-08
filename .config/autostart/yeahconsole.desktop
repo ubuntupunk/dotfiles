@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=yeahconsole -e /home/afropunk/bashloop
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_ZA]=yeahconsole
+Name=yeahconsole
+Comment[en_ZA]=
+Comment=
+X-MATE-Autostart-Delay=3

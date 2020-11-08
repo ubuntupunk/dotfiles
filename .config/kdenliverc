@@ -1,0 +1,124 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:///media/afropunk/Mars1/Thoriso,file:$HOME/Desktop/latest.gif,file:$HOME/Downloads/Mars Odyssey-JpRcnWbOSlk.mkv,file:$HOME/Desktop/tumblr_b11eabdbe1d57b0ae81f18dcd0242f0f_1cebf2c3_400.gif,file:$HOME/Desktop/tumblr_9fc13434716cc43d03e0df46b4dcb865_cc517c59_400.gif,file:$HOME/Desktop/tumblr_9c9143323380827527cd3ddae6a320fc_c9c2d9c4_500.gif,file:$HOME/Desktop/tumblr_57df9f3727e85bf03a46476962225e9d_bf98bc3a_640.gif,file:$HOME/Desktop/tumblr_57810b592b1536ef092b2aaaaf791511_2b9ff919_500.gif,file:///media/afropunk/Mars1/100GOPRO/GOPR0022.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0021.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0020.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0019.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0003.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0002.MP4,file:///media/afropunk/Mars1/100GOPRO/GOPR0001.MP4,file:///media/afropunk/Mars1/More Camping Trip/00093.MTS
+Recent URLs[$e]=file:///home/
+detailViewIconSize=0
+
+[MainWindow]
+Height 1080=822
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAWgAAABKvwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAbAD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAfIAAABGAP////wAAAH4AAABAgAAAHsA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwEAAAAA/////wAAAEQA/////AAAAwAAAAD+AAAAewD////6AAAAAQEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABAQAAAGcAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABTAD////7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACyAP////sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACtAP////sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABTAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAACgBtAGkAeABlAHIAAAAAAP////8AAABZAP///wAABaAAAAGvAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAI+/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1440
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Desktop/,$HOME/Downloads/,/media/afropunk/Mars1/Thoriso/
+KdenliveProjectsFolder[$e]=$HOME/Documents,$HOME/Videos
+
+[Recent Files]
+File1[$e]=$HOME/Documents/styles.kdenlive
+Name1[$e]=styles.kdenlive
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[TitleWidget]
+background_alpha=0
+background_color=0,0,0
+dialog_geometry=AdnQywADAAAAAACeAAAALwAABaoAAAPAAAAAngAAAEIAAAWqAAADwAAAAAAAAAAAB4AAAACeAAAAQgAABaoAAAPA
+font_color=255,255,255
+font_family=Helvetica Rounded Black,-1,54,5,50,0,0,0,0,0
+font_italic=false
+font_outline=0
+font_outline_color=invalid
+font_pixel_size=54
+font_underlined=false
+font_weight=50
+rect_background_alpha=255
+rect_background_color=0,0,0
+rect_foreground_alpha=255
+rect_foreground_color=0,0,0
+rect_line_width=0
+use_grid=false
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA+AAAB8AAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAAHwAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAEU=
+
+[capture]
+decklink_capturedevice=4294967295
+decklink_device_found=false
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+dvgrab_path=/usr/bin/dvgrab
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+defaultaudioapp=/usr/bin/audacity
+defaultimageapp=/usr/bin/gimp
+defaultprojectfolder[$e]=$HOME/Documents
+ffmpegpath[$e]=/usr/bin/ffmpeg
+ffplaypath[$e]=/usr/bin/ffplay
+ffprobepath[$e]=/usr/bin/ffprobe
+mltpath[$e]=/usr/share/mlt/profiles/
+rendererpath[$e]=/usr/bin/melt
+
+[project]
+proxyextension=mkv
+proxyparams=-vf yadif,scale=960:-2 -qscale 3 -vcodec mjpeg -acodec pcm_s16le
+
+[sdl]
+audiobackend=sdl2_audio
+blackmagic_output_device=-1
+sdlAudioBackend=sdl2_audio
+
+[shuttle]
+shuttlebuttons=button0=monitor_pause
+
+[timeline]
+trackheight=65
+
+[unmanaged]
+current_profile=atsc_1080p_25
+default_profile=atsc_1080p_25
+defaultrescaleheight=540
+defaultrescalewidth=960
+force_breeze=true
+monitor_audio=false
+producerslist=pango,pixbuf,framebuffer,avformat,avformat-novalidate,vorbis,decklink,qimage,qtext,kdenlivetitle,ladspa.1416,ladspa.1770,ladspa.1769,ladspa.1774,ladspa.1781,ladspa.1785,ladspa.1885,ladspa.1881,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,blipflash,count,slowmotion,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,pgm,xml,xml-string,xml-nogl
+project_display_ratio=1.7777777777777777
+widgetstyle=Default
+
+[version]
+version=19.12.3

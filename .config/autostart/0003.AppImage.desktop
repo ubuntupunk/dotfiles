@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=0003.AppImage
+Comment=0003.AppImagestartup script
+Exec=/run/user/1000/appimagelauncherfs/0003.AppImage
+StartupNotify=false
+Terminal=false
+X-MATE-Autostart-enabled=false

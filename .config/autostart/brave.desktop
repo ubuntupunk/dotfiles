@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=brave --user-data-dir-name /mnt/ramdisk &
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[en_ZA]=Brave
+Name=Brave
+Comment[en_ZA]=
+Comment=

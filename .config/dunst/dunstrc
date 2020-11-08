@@ -1,0 +1,102 @@
+[global]
+ monitor = 0
+follow = mouse
+#geometry = "300x60-20+48"
+indicate_hidden = yes
+shrink = no
+separator_height = 0
+#padding = 32
+#horizontal_padding = 32
+frame_width = 2
+sort = no
+idle_threshold = 120
+line_height = 4
+markup = full
+alignment = left
+show_age_threshold = 60
+word_wrap = yes
+ignore_newline = no
+stack_duplicates = false
+hide_duplicate_count = yes
+show_indicators = no
+icon_position = off
+sticky_history = yes
+history_length = 20
+
+always_run_script = true
+title = Dunst
+class = Dunst
+bounce_freq = 0
+browser = /usr/bin/vivaldi -new-tab
+dmenu = /usr/bin/dmenu -p dunst:
+follow = none
+font = Awesome 12
+format = "<b>%s</b>\n%b"
+ # geometry [{width}]x{height}][+/-{x}+/-{y}]
+geometry = "0-8+65"
+horizontal_padding = 8
+idle_threshold = 120
+ignore_newline = no
+indicate_hidden = yes
+line_height = 0
+monitor = 0
+padding = 8
+separator_color = frame
+separator_height = 1
+show_age_threshold = 60
+show_indicators = yes
+shrink = no
+sort = yes
+startup_notification = false
+transparency = 0
+word_wrap = no
+
+[shortcuts]
+close = ctrl+space
+close_all = ctrl+shift+space
+history = ctrl+grave
+context = ctrl+shift+period
+
+#[urgency_low]
+#timeout = 4
+#background = "#141c21"
+#foreground = "#93a1a1"
+#frame_color = "#8bc34a"
+
+#[urgency_normal]
+#timeout = 8
+#background = "#141c21"
+#foreground = "#93a1a1"
+#frame_color = "#ba68c8"
+
+#[urgency_critical]
+#timeout = 0
+#background = "#141c21"
+#foreground = "#93a1a1"
+#frame_color = "#ff7043"
+
+[urgency_low]
+    background = "#191919"
+    foreground = "#52bbb7"
+    timeout = 10
+
+[urgency_normal]
+    background = "#191919"
+    foreground = "#52bbb7"
+    timeout = 13
+
+[urgency_critical]
+    background = "#191919"
+    foreground = "#ca4862"
+    timeout = 15
+
+[irc]
+    appname = "weechat"
+    format  = "%s: %b"
+    urgency = low
+    background = "#83c83d"
+    foreground = "#000000"
+
+#[i3blocks]
+ #   summary = "*"
+  #  script = ~/.bin/notify

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=whalebird &
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[en_ZA]=Whalebird
+Name=Whalebird
+Comment[en_ZA]=
+Comment=
+X-MATE-Autostart-enabled=false

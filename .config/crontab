@@ -1,0 +1,21 @@
+# crontab /home/afropunk/.config/crontab
+SHELL=/bin/bash
+USER=afropunk
+HOME=/home/afropunk
+# See http://unix.stackexchange.com/questions/138577/how-to-guarantee-availability-of-bash-env/138609#138609
+BASH_ENV=/home/afropunk/.bash_profile
+# or:
+# @daily  bash -l -c 'run-parts.sh $HOME/.config/cron.daily'
+XDG_CONFIG_HOME=/home/afropunk/.config
+XDG_CACHE_HOME=/home/afropunk/.cache
+XDG_DATA_HOME=/home/afropunk/.local/share
+PATH=/usr/local/bin:/usr/bin:/usr/sbin:/bin:/sbin:/home/afropunk/bin:/home/afropunk/.local/bin
+# DISPLAY=:0
+MAILTO=afropunk
+
+RANDOM_DELAY=5
+
+# period      command
+0,10,20,30,40,50 * * * *  chrt --idle 0 ionice -c2 -n7 run-parts.sh -v $XDG_CONFIG_HOME/cron.hourly > "$XDG_CACHE_HOME/cron.hourly.log" 2>&1
+
+# ex:ft=crontab 

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Exec=riotweb &
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[en_ZA]=Riot.IM
+Name=Riot.IM
+Comment[en_ZA]=
+Comment=
+X-MATE-Autostart-enabled=false
