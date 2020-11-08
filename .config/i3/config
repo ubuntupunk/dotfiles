@@ -13,7 +13,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Ubuntu Nerd 8
+font pango:System San Francisco Display 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -24,7 +24,7 @@ font pango:Ubuntu Nerd 8
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -47,10 +47,28 @@ exec --no-startup-id pa-applet
 exec --no-startup-id tomboy
 
 #launch ilock
-bindysm $mod+shift+x exec ilock 
+#bindysm $mod+shift+x exec ilock 
 
 #apply wallpaper
 exec_always feh --bg-scale ~/Pictures/Wallpapers/default.jpeg
+
+#powermenu
+bindsym Control+Mod1+Delete exec $HOME/.config/i3/scripts/shutdown_menu
+
+#save window layouts
+bindsym $mod+F3 exec i3-resurrect save -d $HOME/.config/i3/resurrect/
+bindsym $mod+F4 exec i3-resurrect restore -d $HOME/.config/i3/resurrect/
+
+#---------------------------
+#SYSTEM STATUS AND STUFF
+#---------------------------
+#lockscreen
+bindsym $mod+shift+x exec betterlockscreen --lock 
+#Set image for lockscreen
+#where /lock contains wallpapers for lockscreen
+exec --no-startup-id betterlockscreen -u ~/.config/i3/ilock/
+#Suspend the system
+bindsym $mod+Shift+s exec betterlockscreen --lock & systemctl suspend
 
 ## Use pactl to adjust volume in PulseAudio.
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ 1 +5% && $refresh_i3status
@@ -66,20 +84,28 @@ bindsym XF86AudioPrev exec playerctl previous
 
 bindsym XF86PowerOff exec --no-startup-id prompt "Shutdown computer?" "$shutdown"
 
+bindsym Print exec screenshot
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
 # or alt bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -p chooser: -l 5 -nf "#6FCB9F" -sf "#ffe28a" -fn Hack
+bindsym $mod+F2 exec dmenu_run -p chooser: -l 5 -nf "#6FCB9F" -sf "#ffe28a" -fn Hack
 
+#or start rofi as dmenu replacement
+bindsym Mod1+d exec rofi -show run -font "System San Francisco Display 14"
+
+#bindsym Mod1+d exec rofi -combi-modi window,drun -show combi -modi combi -font "Noto Mono 10"
+# -combi-modi window,drun -show combi -modi combi
+# -combi-modi window,drun -show combi -modi combi
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -173,11 +199,11 @@ for_window [class="urxvt"] border pixel 1
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 
-set $ws1 "1 "
-set $ws2 "2 :"
-set $ws3 "3"
-set $ws4 "4:"
-set $ws5 "5 "
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -193,7 +219,8 @@ assign [class="^URxvt$" instance="^irssi$"] → 3
 #Assign  gnome-terminal
 assign [class="Gnome-terminal$"] → 2
 assign [class="^Terminal$"] → 2
-
+assign [class="^kitty$"] → 2
+ 
 #assign [class="Gnome-terminal" instance="<instance>" title="<title>"] $workspace7
 #assign [class="Gnome-terminal" ] $workspace1
 
@@ -234,8 +261,8 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
                 for_window [class="Skype"] tabbed
 
 	#VisualStudio
-		assign [class="^Code$"] → 5
-		for_window [class="^Code$"] move to container 5
+		assign [class="^Code$"] → 4
+		for_window [class="^Code$"] move to container 4
 
 	#AndroidStudio
 		assign [class="^jetbrains$"] → 6 
@@ -243,11 +270,11 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 	#XBMC, Kodi
                 assign [class="^popcorn$"] → 7
-                for_window [class="^popcorn$"] fullscreen
-        # KeePass2
-  
+		for_window [class="^popcorn$"] fullscreen
+
         # Steam
                 assign [class="Steam"] → 8
+
         # sakura
                 for_window [class="sakura"] border 1pixel
 
@@ -269,30 +296,41 @@ assign [class="(?i)Clementine"] $ws4
 assign [class="(?i)vlc"] $ws4
 assign [class="(?i)Spotify"] $ws5
 assign [class="(?i)galculator"] $ws7
-assign [class="(?i)lxterminal"] $ws2
 assign [class="(?i)minecraft"] $ws10
-assign [class="(?i)Visual$"] $ws5
+assign [class="(?i)Visual$"] $ws4
 assign [class="(?i)tomboy"] $ws8
 assign [class="(?i)jetbrains"] $ws6
 for_window [class="Gimp"] move workspace $ws7
 for_window [title="GIMP Startup"] move workspace $ws7
+for_window [title="Spotify"] move to workspace $ws5
+#use xprop to get classes for the applications
 
+assign [class="Nautilus"] $ws3
+assign [class="Code"] $ws5
+assign [class="Pinta|krita"] $ws7
+#assign [class="Mailspring"] $ws10
 
 # #---Function Buttons---# #
-bindsym $mod+F1		exec --no-startup-id groff -mom ${XDG_DATA_HOME:-$HOME/.local/share/book.pdf -Tpdf | zathura -
-bindsym $mod+F2		restart
-bindsym $mod+F3		exec --no-startup-id displayselect
-bindsym $mod+F4		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
-bindsym $mod+F5		exec --no-startup-id $netrefresh
-bindsym $mod+F6		exec --no-startup-id torwrap
-bindsym $mod+F7		exec --no-startup-id td-toggle
-bindsym $mod+F8		exec --no-startup-id mw sync
-bindsym $mod+F9		exec --no-startup-id dmenumount
+bindsym $mod+F1		exec --no-startup-id groff $HOME/.local/share/beast.txt -T pdf | zathura -
+
+#bindsym $mod+F2		restart
+#bindsym $mod+F5		exec --no-startup-id displayselect
+bindsym $mod+F6		exec --no-startup-id prompt "Hibernate computer?" "$hibernate"
+bindsym $mod+F7		exec --no-startup-id $netrefresh
+#bindsym $mod+		exec --no-startup-id torwrap
+bindsym $mod+F8		exec --no-startup-id td-toggle
+#bindsym $mod+F8		exec --no-startup-id mw sync
+bindsym $mod+F9	restart
 bindsym $mod+F10	exec --no-startup-id dmenuumount
 bindsym $mod+F11	exec --no-startup-id ducksearch
-bindsym $mod+F12	exec $term -e nmtui
+bindsym $mod+F12	exec $TERM -e nmtui
 bindsym $mod+Shift+F1	exec --no-startup-id toggle-welcome
 
+#application shorcuts
+bindsym $mod+Shift+f exec nautilus
+#bindsym $mod+Shift+o exec opera
+#bindsym $mod+Shift+b exec 
+#bindsym $mod+Print exec spectacle
 
 #Some hacks
 #for_window [class="WhatsApp"] move container to workspace 3
@@ -363,13 +401,13 @@ bar {
     modifier Mod1
     status_command ~/.cargo/bin/i3status-rs ~/.config/i3/config.toml
     colors {
-        separator #666666
-        background #222222
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
+        separator #333333
+        background #2c001e
+        statusline #aea79f
+        focused_workspace #dd4814 #dd4814 #ffffff #fdf6e3
+        active_workspace #902a07 #902a07 #aea79f #fdf6e3
+        inactive_workspace #902a07 #902a07 #aea79f #002b36
+        urgent_workspace #77216f #77216f #ffffff #fdf6e3
     }
 }
 
@@ -385,7 +423,16 @@ bindsym XF86MonBrighnessDown exec xbacklight -dec 5 && xbacklight > /home/afropu
 
 set $refresh_i3status killall -SIGUSR1 i3status
 
-#Window Colors
+#https://lib.rs/crates/i3-auto-layout
+exec_always --no-startup-id i3-auto-layout
+
+#i3spin
+exec_always --no-startup i3spin
+
+# i3wsr Change i3-wm workspace names based on its contents
+exec_always --no-startup-id $HOME/.cargo/bin/i3wsr
+
+#Define some Window Colors
 
 set $bg-color            #173f4f
 set $bg-color-border     #73ba25
@@ -395,10 +442,13 @@ set $inactive-text-color #8F8E7F
 set $urgent-bg-color     #fb2e01
  
 # Coloring the windows of the windows
-#                          bordes             fondos               texto             indicador
-client.focused          $bg-color-border     $bg-color          $text-color        #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color         #00ff00
+# can also be set via i3-style solarized -o ~/.config/i3/config --reload
+# or like this https://bit.ly/3oMiq84
+#                             bordes             fondos               texto             indicador
+client.focused #dd4814 #dd4814 #ffffff #902a07
+client.unfocused #5e2750 #5e2750 #aea79f #5e2750
+client.focused_inactive #5e2750 #5e2750 #aea79f #5e2750
+client.urgent #77216f #77216f #ffffff #efb73e
 
-
+#Start compton
+exec --no-startup-id compton -f
