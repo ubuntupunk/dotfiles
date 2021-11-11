@@ -11,14 +11,14 @@
 
 # Cli Apps
 - [bolt](https://github.com/salman-abedin/bolt)
-- batcat
-- cava
-- cod
-- devour
-- feh
-- flameshot
-- fzf
-- handbrake
+- [batcat](https://docs.rs/crate/bat/0.12.1) colourful cat written in rust
+- [cava](https://github.com/karlstav/cava), alsa sound
+- [cod](https://github.com/dim-an/cod), completion daemon for bash, fish etc
+- [devour](https://github.com/salman-abedin/devour), x11 window swallower
+- [feh](https://github.com/derf/feh), fast and light image viewer
+- [flameshot](https://github.com/flameshot-org/flameshot), screenshot utility
+- [fzf](https://github.com/junegunn/fzf), fuzzy find
+- [handbrake](https://github.com/HandBrake/HandBrake)
 - htop
 - nvim
 - newsboat
