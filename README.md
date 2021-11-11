@@ -47,7 +47,7 @@
 - zellij
 
 # Themes
-- lighthaus
+- [lighthaus](https://github.com/lighthaus-theme)
 - nord
 - dracula
 ## Startup Themes
