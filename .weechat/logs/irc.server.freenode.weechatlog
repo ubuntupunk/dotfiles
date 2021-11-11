@@ -1,0 +1,317 @@
+2021-09-21 18:21:23	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:21:26	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:21:26	--	gnutls: receiving 3 certificates
+2021-09-21 18:21:26	--	 - certificate[1] info:
+2021-09-21 18:21:26	--	   - subject `CN=taejo.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03c08dee978b71f9dce6881a94e68e5ffc77, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:05:54 UTC', expires `2021-11-08 20:05:52 UTC', pin-sha256="cXtXsR+pFrRIHpBK9tIE1RWGbmiTbIPHc13J9L1H/Qo="
+2021-09-21 18:21:26	--	 - certificate[2] info:
+2021-09-21 18:21:26	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:21:26	--	 - certificate[3] info:
+2021-09-21 18:21:26	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:21:26	--	gnutls: peer's certificate is trusted
+2021-09-21 18:21:26	--	irc: connected to chat.freenode.net/6697 (216.128.145.21)
+2021-09-21 18:21:27	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:21:27	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:21:27	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:21:31	--	*.joseon.kr: *** Could not resolve your hostname: Request timed out; using your IP address (165.0.131.172) instead.
+2021-09-21 18:21:31	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:21:31	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:21:31	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:21:31	--	irc: disconnecting from server...
+2021-09-21 18:21:31	--	irc: disconnected from server
+2021-09-21 18:21:31	--	irc: reconnecting to server in 10 seconds
+2021-09-21 18:21:41	--	irc: reconnecting to server...
+2021-09-21 18:21:41	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:21:42	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:21:42	--	gnutls: receiving 3 certificates
+2021-09-21 18:21:42	--	 - certificate[1] info:
+2021-09-21 18:21:42	--	   - subject `CN=hyojong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0418766e68fed7f1f82c8bfaf49fb1b35bfe, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:56 UTC', expires `2021-11-09 04:46:54 UTC', pin-sha256="SztyyqIMYgCY09Iyq5LJN9r2rU344tRAMvBdv/9Xa6w="
+2021-09-21 18:21:42	--	 - certificate[2] info:
+2021-09-21 18:21:42	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:21:42	--	 - certificate[3] info:
+2021-09-21 18:21:42	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:21:42	--	gnutls: peer's certificate is trusted
+2021-09-21 18:21:42	--	irc: connected to chat.freenode.net/6697 (172.104.27.105)
+2021-09-21 18:21:42	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:21:42	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:21:42	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:21:42	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:21:47	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:21:47	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:21:47	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:21:47	--	irc: disconnecting from server...
+2021-09-21 18:21:47	--	irc: disconnected from server
+2021-09-21 18:21:47	--	irc: reconnecting to server in 20 seconds
+2021-09-21 18:22:07	--	irc: reconnecting to server...
+2021-09-21 18:22:07	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:22:08	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:22:08	--	gnutls: receiving 3 certificates
+2021-09-21 18:22:08	--	 - certificate[1] info:
+2021-09-21 18:22:08	--	   - subject `CN=danjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04d8ef462a945dd808bd59b83507cc19421a, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:52 UTC', expires `2021-11-09 04:46:50 UTC', pin-sha256="XFBqaY4nElrWFqxOH/T5EGUeMS+VuS093b8NpAzjOBc="
+2021-09-21 18:22:08	--	 - certificate[2] info:
+2021-09-21 18:22:08	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:22:08	--	 - certificate[3] info:
+2021-09-21 18:22:08	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:22:08	--	gnutls: peer's certificate is trusted
+2021-09-21 18:22:08	--	irc: connected to chat.freenode.net/6697 (207.148.28.126)
+2021-09-21 18:22:08	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:22:08	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:22:08	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:22:08	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:22:13	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:22:13	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:22:13	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:22:13	--	irc: disconnecting from server...
+2021-09-21 18:22:13	--	irc: disconnected from server
+2021-09-21 18:22:13	--	irc: reconnecting to server in 40 seconds
+2021-09-21 18:22:53	--	irc: reconnecting to server...
+2021-09-21 18:22:53	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:22:54	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:22:54	--	gnutls: receiving 3 certificates
+2021-09-21 18:22:54	--	 - certificate[1] info:
+2021-09-21 18:22:54	--	   - subject `CN=jeongjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03fc35d8c20d6d602ca596431d64cd4a7125, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:07:53 UTC', expires `2021-11-08 20:07:51 UTC', pin-sha256="IqBPvSf3kts22jJfiYarTccZDsvpCwtNq5Un5y5ysu8="
+2021-09-21 18:22:54	--	 - certificate[2] info:
+2021-09-21 18:22:54	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:22:54	--	 - certificate[3] info:
+2021-09-21 18:22:54	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:22:54	--	gnutls: peer's certificate is trusted
+2021-09-21 18:22:54	--	irc: connected to chat.freenode.net/6697 (209.222.21.9)
+2021-09-21 18:22:54	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:22:54	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:22:54	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:22:54	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:22:59	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:22:59	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:22:59	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:22:59	--	irc: disconnecting from server...
+2021-09-21 18:22:59	--	irc: disconnected from server
+2021-09-21 18:22:59	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-09-21 18:23:18	=!=	irc: this buffer is not a channel!
+2021-09-21 18:23:24	--	irc: disconnected from server
+2021-09-21 18:26:04	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:26:05	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:26:05	--	gnutls: receiving 3 certificates
+2021-09-21 18:26:05	--	 - certificate[1] info:
+2021-09-21 18:26:05	--	   - subject `CN=myeongjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04267902bac04b3c2ec6df65130c17c4c9b6, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:57 UTC', expires `2021-11-09 04:46:55 UTC', pin-sha256="H804efsdkfXzf4S+PH6V79JHERVCaN3A//ZaGQhMaYQ="
+2021-09-21 18:26:05	--	 - certificate[2] info:
+2021-09-21 18:26:05	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:26:05	--	 - certificate[3] info:
+2021-09-21 18:26:05	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:26:05	--	gnutls: peer's certificate is trusted
+2021-09-21 18:26:05	--	irc: connected to chat.freenode.net/6697 (139.162.201.178)
+2021-09-21 18:26:05	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:26:05	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:26:05	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:26:05	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:26:10	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:26:10	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:26:10	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:26:10	--	irc: disconnecting from server...
+2021-09-21 18:26:10	--	irc: disconnected from server
+2021-09-21 18:26:10	--	irc: reconnecting to server in 10 seconds
+2021-09-21 18:26:20	--	irc: reconnecting to server...
+2021-09-21 18:26:20	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:26:21	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:26:21	--	gnutls: receiving 3 certificates
+2021-09-21 18:26:21	--	 - certificate[1] info:
+2021-09-21 18:26:21	--	   - subject `CN=myeongjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x04267902bac04b3c2ec6df65130c17c4c9b6, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:57 UTC', expires `2021-11-09 04:46:55 UTC', pin-sha256="H804efsdkfXzf4S+PH6V79JHERVCaN3A//ZaGQhMaYQ="
+2021-09-21 18:26:21	--	 - certificate[2] info:
+2021-09-21 18:26:21	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:26:21	--	 - certificate[3] info:
+2021-09-21 18:26:21	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:26:21	--	gnutls: peer's certificate is trusted
+2021-09-21 18:26:21	--	irc: connected to chat.freenode.net/6697 (139.162.201.178)
+2021-09-21 18:26:21	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:26:21	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:26:21	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:26:21	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:26:26	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:26:26	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:26:26	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:26:26	--	irc: disconnecting from server...
+2021-09-21 18:26:26	--	irc: disconnected from server
+2021-09-21 18:26:26	--	irc: reconnecting to server in 20 seconds
+2021-09-21 18:26:32	=!=	irc: this buffer is not a channel!
+2021-09-21 18:26:35	--	irc: disconnected from server
+2021-09-21 18:36:18	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:36:19	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:36:19	--	gnutls: receiving 3 certificates
+2021-09-21 18:36:19	--	 - certificate[1] info:
+2021-09-21 18:36:19	--	   - subject `CN=taejo.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03c08dee978b71f9dce6881a94e68e5ffc77, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:05:54 UTC', expires `2021-11-08 20:05:52 UTC', pin-sha256="cXtXsR+pFrRIHpBK9tIE1RWGbmiTbIPHc13J9L1H/Qo="
+2021-09-21 18:36:19	--	 - certificate[2] info:
+2021-09-21 18:36:19	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:36:19	--	 - certificate[3] info:
+2021-09-21 18:36:19	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:36:19	--	gnutls: peer's certificate is trusted
+2021-09-21 18:36:19	--	irc: connected to chat.freenode.net/6697 (216.128.145.21)
+2021-09-21 18:36:20	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:36:20	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:36:20	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:36:24	--	*.joseon.kr: *** Could not resolve your hostname: Request timed out; using your IP address (165.0.131.172) instead.
+2021-09-21 18:36:24	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:36:24	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:36:24	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:36:24	--	irc: disconnecting from server...
+2021-09-21 18:36:24	--	irc: disconnected from server
+2021-09-21 18:36:24	--	irc: reconnecting to server in 10 seconds
+2021-09-21 18:36:34	--	irc: reconnecting to server...
+2021-09-21 18:36:34	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:36:35	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:36:35	--	gnutls: receiving 3 certificates
+2021-09-21 18:36:35	--	 - certificate[1] info:
+2021-09-21 18:36:35	--	   - subject `CN=hyojong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0418766e68fed7f1f82c8bfaf49fb1b35bfe, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:56 UTC', expires `2021-11-09 04:46:54 UTC', pin-sha256="SztyyqIMYgCY09Iyq5LJN9r2rU344tRAMvBdv/9Xa6w="
+2021-09-21 18:36:35	--	 - certificate[2] info:
+2021-09-21 18:36:35	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:36:35	--	 - certificate[3] info:
+2021-09-21 18:36:35	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:36:35	--	gnutls: peer's certificate is trusted
+2021-09-21 18:36:35	--	irc: connected to chat.freenode.net/6697 (172.104.27.105)
+2021-09-21 18:36:35	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:36:35	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:36:35	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:36:36	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:36:40	--	*.joseon.kr: *** Ident lookup timed out, using ~afropunk instead.
+2021-09-21 18:36:40	=!=	Closing link: (~afropunk@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:36:40	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:36:40	--	irc: disconnecting from server...
+2021-09-21 18:36:40	--	irc: disconnected from server
+2021-09-21 18:36:40	--	irc: reconnecting to server in 20 seconds
+2021-09-21 18:37:00	--	irc: reconnecting to server...
+2021-09-21 18:37:00	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:37:01	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:37:01	--	gnutls: receiving 3 certificates
+2021-09-21 18:37:01	--	 - certificate[1] info:
+2021-09-21 18:37:01	--	   - subject `CN=munjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0400a26278c0c86ddd895513573e97b8f9fa, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 03:19:38 UTC', expires `2021-11-09 03:19:36 UTC', pin-sha256="CET28X6WNkk9rdbrUs7yNeqTVNdfhdSMhulw8CN9Bzw="
+2021-09-21 18:37:01	--	 - certificate[2] info:
+2021-09-21 18:37:01	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:37:01	--	 - certificate[3] info:
+2021-09-21 18:37:01	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:37:01	--	gnutls: peer's certificate is trusted
+2021-09-21 18:37:01	--	irc: connected to chat.freenode.net/6697 (149.28.246.185)
+2021-09-21 18:37:02	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:37:02	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:37:02	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:37:02	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:37:06	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:37:06	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:37:06	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:37:06	--	irc: disconnecting from server...
+2021-09-21 18:37:06	--	irc: disconnected from server
+2021-09-21 18:37:06	--	irc: reconnecting to server in 40 seconds
+2021-09-21 18:37:46	--	irc: reconnecting to server...
+2021-09-21 18:37:46	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:37:47	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:37:47	--	gnutls: receiving 3 certificates
+2021-09-21 18:37:47	--	 - certificate[1] info:
+2021-09-21 18:37:47	--	   - subject `CN=taejo.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03c08dee978b71f9dce6881a94e68e5ffc77, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:05:54 UTC', expires `2021-11-08 20:05:52 UTC', pin-sha256="cXtXsR+pFrRIHpBK9tIE1RWGbmiTbIPHc13J9L1H/Qo="
+2021-09-21 18:37:47	--	 - certificate[2] info:
+2021-09-21 18:37:47	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:37:47	--	 - certificate[3] info:
+2021-09-21 18:37:47	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:37:47	--	gnutls: peer's certificate is trusted
+2021-09-21 18:37:47	--	irc: connected to chat.freenode.net/6697 (216.128.145.21)
+2021-09-21 18:37:48	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:37:48	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:37:48	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:37:52	--	*.joseon.kr: *** Could not resolve your hostname: Request timed out; using your IP address (165.0.131.172) instead.
+2021-09-21 18:37:52	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:37:52	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:37:52	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:37:52	--	irc: disconnecting from server...
+2021-09-21 18:37:52	--	irc: disconnected from server
+2021-09-21 18:37:52	--	irc: reconnecting to server in 1 minute, 20 seconds
+2021-09-21 18:39:12	--	irc: reconnecting to server...
+2021-09-21 18:39:12	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:39:13	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:39:13	--	gnutls: receiving 3 certificates
+2021-09-21 18:39:13	--	 - certificate[1] info:
+2021-09-21 18:39:13	--	   - subject `CN=taejo.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03c08dee978b71f9dce6881a94e68e5ffc77, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:05:54 UTC', expires `2021-11-08 20:05:52 UTC', pin-sha256="cXtXsR+pFrRIHpBK9tIE1RWGbmiTbIPHc13J9L1H/Qo="
+2021-09-21 18:39:13	--	 - certificate[2] info:
+2021-09-21 18:39:13	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:39:13	--	 - certificate[3] info:
+2021-09-21 18:39:13	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:39:13	--	gnutls: peer's certificate is trusted
+2021-09-21 18:39:13	--	irc: connected to chat.freenode.net/6697 (216.128.145.21)
+2021-09-21 18:39:14	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:39:14	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:39:14	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:39:18	--	*.joseon.kr: *** Could not resolve your hostname: Request timed out; using your IP address (165.0.131.172) instead.
+2021-09-21 18:39:18	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:39:18	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:39:18	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:39:18	--	irc: disconnecting from server...
+2021-09-21 18:39:18	--	irc: disconnected from server
+2021-09-21 18:39:18	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2021-09-21 18:41:58	--	irc: reconnecting to server...
+2021-09-21 18:41:58	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:41:59	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:41:59	--	gnutls: receiving 3 certificates
+2021-09-21 18:41:59	--	 - certificate[1] info:
+2021-09-21 18:41:59	--	   - subject `CN=hyojong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x0418766e68fed7f1f82c8bfaf49fb1b35bfe, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-11 04:46:56 UTC', expires `2021-11-09 04:46:54 UTC', pin-sha256="SztyyqIMYgCY09Iyq5LJN9r2rU344tRAMvBdv/9Xa6w="
+2021-09-21 18:41:59	--	 - certificate[2] info:
+2021-09-21 18:41:59	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:41:59	--	 - certificate[3] info:
+2021-09-21 18:41:59	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:41:59	--	gnutls: peer's certificate is trusted
+2021-09-21 18:41:59	--	irc: connected to chat.freenode.net/6697 (172.104.27.105)
+2021-09-21 18:41:59	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:41:59	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:41:59	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:41:59	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:42:04	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:42:04	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:42:04	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:42:04	--	irc: disconnecting from server...
+2021-09-21 18:42:04	--	irc: disconnected from server
+2021-09-21 18:42:04	--	irc: reconnecting to server in 5 minutes, 20 seconds
+2021-09-21 18:43:33	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:43:34	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:43:34	--	gnutls: receiving 3 certificates
+2021-09-21 18:43:34	--	 - certificate[1] info:
+2021-09-21 18:43:34	--	   - subject `CN=jeongjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03fc35d8c20d6d602ca596431d64cd4a7125, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:07:53 UTC', expires `2021-11-08 20:07:51 UTC', pin-sha256="IqBPvSf3kts22jJfiYarTccZDsvpCwtNq5Un5y5ysu8="
+2021-09-21 18:43:34	--	 - certificate[2] info:
+2021-09-21 18:43:34	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:43:34	--	 - certificate[3] info:
+2021-09-21 18:43:34	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:43:34	--	gnutls: peer's certificate is trusted
+2021-09-21 18:43:34	--	irc: connected to chat.freenode.net/6697 (209.222.21.9)
+2021-09-21 18:43:34	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:43:34	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:43:34	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:43:34	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:43:34	--	irc: client capability, server supports: inspircd.org/standard-replies extended-join server-time message-tags echo-message labeled-response invite-notify setname account-tag multi-prefix inspircd.org/poison batch account-notify userhost-in-names chghost sasl cap-notify away-notify draft/relaymsg=/
+2021-09-21 18:43:34	--	irc: client capability, requesting: sasl
+2021-09-21 18:43:35	--	irc: client capability, enabled: sasl
+2021-09-21 18:43:36	--	SASL authentication failed
+2021-09-21 18:43:39	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:43:39	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:43:39	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:43:39	--	irc: disconnecting from server...
+2021-09-21 18:43:39	--	irc: disconnected from server
+2021-09-21 18:43:39	--	irc: reconnecting to server in 10 seconds
+2021-09-21 18:43:49	--	irc: reconnecting to server...
+2021-09-21 18:43:49	--	irc: connecting to server chat.freenode.net/6697 (SSL)...
+2021-09-21 18:43:50	--	gnutls: connected using 2048-bit Diffie-Hellman shared secret exchange
+2021-09-21 18:43:50	--	gnutls: receiving 3 certificates
+2021-09-21 18:43:50	--	 - certificate[1] info:
+2021-09-21 18:43:50	--	   - subject `CN=jeongjong.joseon.kr', issuer `CN=R3,O=Let's Encrypt,C=US', serial 0x03fc35d8c20d6d602ca596431d64cd4a7125, RSA key 2048 bits, signed using RSA-SHA256, activated `2021-08-10 20:07:53 UTC', expires `2021-11-08 20:07:51 UTC', pin-sha256="IqBPvSf3kts22jJfiYarTccZDsvpCwtNq5Un5y5ysu8="
+2021-09-21 18:43:50	--	 - certificate[2] info:
+2021-09-21 18:43:50	--	   - subject `CN=R3,O=Let's Encrypt,C=US', issuer `CN=ISRG Root X1,O=Internet Security Research Group,C=US', serial 0x00912b084acf0c18a753f6d62e25a75f5a, RSA key 2048 bits, signed using RSA-SHA256, activated `2020-09-04 00:00:00 UTC', expires `2025-09-15 16:00:00 UTC', pin-sha256="jQJTbIh0grw0/1TkHSumWb+Fs0Ggogr621gT3PvPKG0="
+2021-09-21 18:43:50	--	 - certificate[3] info:
+2021-09-21 18:43:50	--	   - subject `CN=ISRG Root X1,O=Internet Security Research Group,C=US', issuer `CN=DST Root CA X3,O=Digital Signature Trust Co.', serial 0x4001772137d4e942b8ee76aa3c640ab7, RSA key 4096 bits, signed using RSA-SHA256, activated `2021-01-20 19:14:03 UTC', expires `2024-09-30 18:14:03 UTC', pin-sha256="C5+lpZ7tcVwmwQIMcRtPbsQtWLABXhQzejna0wHFr8M="
+2021-09-21 18:43:50	--	gnutls: peer's certificate is trusted
+2021-09-21 18:43:50	--	irc: connected to chat.freenode.net/6697 (209.222.21.9)
+2021-09-21 18:43:51	--	*.joseon.kr: *** Looking up your ident...
+2021-09-21 18:43:51	--	*.joseon.kr: *** Looking up your hostname...
+2021-09-21 18:43:51	--	*.joseon.kr: *** You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/
+2021-09-21 18:43:51	--	*.joseon.kr: *** Could not resolve your hostname: Domain not found; using your IP address (165.0.131.172) instead.
+2021-09-21 18:43:51	--	irc: client capability, server supports: inspircd.org/standard-replies extended-join server-time message-tags echo-message labeled-response invite-notify setname account-tag multi-prefix inspircd.org/poison batch account-notify userhost-in-names chghost sasl cap-notify away-notify draft/relaymsg=/
+2021-09-21 18:43:51	--	irc: client capability, requesting: sasl
+2021-09-21 18:43:51	--	irc: client capability, enabled: sasl
+2021-09-21 18:43:52	--	SASL authentication failed
+2021-09-21 18:43:55	--	*.joseon.kr: *** Ident lookup timed out, using ~ubuntupun instead.
+2021-09-21 18:43:55	=!=	Closing link: (~ubuntupun@165.0.131.172) [You must use TLS/SSL and authenticate via SASL to connect to freenode please visit https://irc.com/login/sso in order to create an account. SASL Configuration: https://freenode.net/kb/answer/sasl - Webchat: https://webchat.freenode.net/]
+2021-09-21 18:43:55	=!=	irc: reading data on socket: error 0 (connection closed by peer)
+2021-09-21 18:43:55	--	irc: disconnecting from server...
+2021-09-21 18:43:55	--	irc: disconnected from server
+2021-09-21 18:43:55	--	irc: reconnecting to server in 20 seconds
+2021-09-21 18:44:00	--	irc: disconnected from server

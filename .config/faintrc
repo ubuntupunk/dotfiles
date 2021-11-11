@@ -1,0 +1,162 @@
+#!/bin/sh
+#
+# Config file for faint
+#
+# Dependencies: pkill, setsid (Optional; For better launching experience)
+
+#===============================================================================
+#                             Default Settings
+#===============================================================================
+
+SHOW_HIDDEN=1
+USE_FILTERS=1
+MAX_DEPTH=1
+
+MARGIN_TOP_BOTTOM=10 # 0 - 49
+MARGIN_LEFT_RIGHT=20 # 0 - 49
+BORDER=rounded       # rounded | sharp | horizontal | vertical | top | bottom | left | right
+
+TRASH_DIR=~/.local/share/Trash
+
+#===============================================================================
+# Bindings ( ⁉ has to be a single character!) [ More on fzf man page ]
+#===============================================================================
+
+KEY_LAUNCH=';'
+KEY_RUN=':'
+KEY_OPERATE='space'
+KEY_QUIT='esc'
+
+KEY_SHELL='enter'
+
+KEY_UP='btab'
+KEY_DOWN='tab'
+
+KEY_MARK_DOWN=']'
+KEY_MARK_UP='['
+KEY_MARK_ALL='\\'
+
+KEY_BOOKMARK_BROWSE="'"
+KEY_BOOKMARK_ADD='\"'
+
+KEY_TOGGLE_HIDDEN=">"
+KEY_TOGGLE_FILTERS='.'
+
+KEY_REFRESH="<"
+
+KEY_DEPTH_PLUS="="
+KEY_DEPTH_MINUS="-"
+KEY_DEPTH_RESET="_"
+
+#===============================================================================
+#                             Filters
+#===============================================================================
+
+#----------------------------------------------
+# Format: <FILE>/<FOLDER; ( ⁉  No Sapces between lines )
+#----------------------------------------------
+FILTERS="\
+node_modules*;
+.git*;
+package-lock.json$;
+yarn.lock$;
+LICENSE$;
+Makefile$;
+"
+
+#===============================================================================
+#                             Operations
+#===============================================================================
+
+#---------------------------------------
+# Operation Functions
+#---------------------------------------
+# Variable Conventions
+#     FILE_ARGS      = Files selected for operation
+#     FILE_LIST      = Files tracked for consecutive operations
+#     FILE_LIST_PATH = PATH for tracking files
+#     LAST_DIR       = Current path
+
+trash() { echo "$FILE_ARGS" | while read -r file; do mv -f "$file" "$TRASH_DIR"; done; }
+delete() { echo "$FILE_ARGS" | while read -r file; do rm -fr "$file"; done; }
+yank() {
+  echo "$FILE_ARGS" > "$FILE_LIST_PATH"
+  echo "$FILE_ARGS" | xsel -b 2> /dev/null
+}
+paste() {
+  echo "$FILE_LIST" \
+    | while read -r file; do
+      cp -r "$file" "$LAST_DIR" || cp -r "$file" "$file~"
+    done
+}
+move() {
+  echo "$FILE_LIST" \
+    | while read -r file; do
+      mv -f "$file" "$LAST_DIR"
+    done
+}
+compress() {
+  echo "$FILE_ARGS" \
+    | while read -r file; do
+      tar cvzf "compressed.tar" "$file"
+    done
+}
+
+hulk() { kill -37 "$FAINT_PID" && pkill -P "$FAINT_PID"; }
+make_dir() { kill -38 "$FAINT_PID" && pkill -P "$FAINT_PID"; }
+rename() {
+  echo "$FILE_ARGS" > "$FILE_LIST_PATH"
+  kill -39 "$FAINT_PID"
+  pkill -P "$FAINT_PID"
+}
+
+#-----------------------------------------------
+# Format: <OPERATION_NAME>:<OPERATION_FUNCTION>;
+#-----------------------------------------------
+OPS="\
+🏷  Rename:rename;
+⚔  Trash:trash;
+❌ Delete:delete;
+©  Yank:yank;
+🖌  Paste:paste;
+🚚 Move:move;
+😠 Hulk:hulk;
+📁 Create Directory:make_dir;
+♦  Compress:compress;
+"
+
+#===============================================================================
+#                             Launching
+#===============================================================================
+
+# Helper function: Forks & suppresses the output of a given commmand
+fork() { setsid -f "$@" > /dev/null 2>&1; }
+
+execute() {
+  FILE=$*
+  case ${FILE##*.} in
+    # <EXT1> | <EXT2 | ...) <CMD> "$1";;
+    mp4 | mkv | gif) fork mpv "$FILE" ;;
+    # default
+    *) $EDITOR "$FILE" ;;
+  esac
+}
+
+#===============================================================================
+#                               Icons
+#===============================================================================
+
+#---------------------------------------
+# Format: <EXT_1|EXT_2|...>:<ICON>;
+#---------------------------------------
+ICONS="\
+DIR:📁;
+FILE:📃;
+LINK:⛓;
+md:📘;
+pdf|epub:📚;
+mp4|mkv:🎥;
+jpg|jpeg:📸;
+png|ico:🖼;
+"
+

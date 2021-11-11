@@ -1,0 +1,39 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[General]
+EditableUrl=true
+FilterBar=true
+ShowCopyMoveMenu=true
+ShowFullPath=true
+SplitView=true
+Version=200
+ViewPropsTimestamp=2021,10,24,17,24,57
+
+[IconsMode]
+FontWeight=50
+
+[KPropertiesDialog]
+Height 1080=505
+Width 1920=464
+
+[MainWindow]
+Height 1080=1002
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC0AAADxfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAlAAADxQAAAEYA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAIA////AAAC6QAAA8UAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=931
+
+[PreviewSettings]
+Plugins=rawthumbnail,imagethumbnail,comicbookthumbnail,ffmpegthumbs,blenderthumbnail,ebookthumbnail,windowsimagethumbnail,djvuthumbnail,svgthumbnail,kraorathumbnail,windowsexethumbnail,gsthumbnail,audiothumbnail,jpegthumbnail,opendocumentthumbnail,directorythumbnail,mltpreview,exrthumbnail
+
+[Search]
+Location=Everywhere
+What=Content
+
+[SettingsDialog]
+Height 1080=450
+Width 1920=570

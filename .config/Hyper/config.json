@@ -1,0 +1,14 @@
+{
+	"windowPosition": [
+		0,
+		0
+	],
+	"windowSize": [
+		1920,
+		1080
+	],
+	"hyper": {
+		"plugins": "{\"plugins\":[\"hyper-synthwave84\",\"hyper-imgcat\",\"@garmash/hyper-statusline\"],\"localPlugins\":[]}",
+		"plugin-versions": "[[\"hyper-synthwave84\",\"0.0.2\"],[\"hyper-imgcat\",\"1.0.1\"],[\"hyper-statusline\",\"1.8.0\"]]"
+	}
+}

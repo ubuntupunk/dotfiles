@@ -1,0 +1,194 @@
+2021-09-21 18:19:41		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2021-09-21 18:19:41		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2021-09-21 18:19:41		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2021-09-21 18:19:41		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2021-09-21 18:19:41		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2021-09-21 18:19:41		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2021-09-21 18:19:41		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2021-09-21 18:19:41		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2021-09-21 18:19:41		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2021-09-21 18:19:41		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2021-09-21 18:19:41		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2021-09-21 18:19:41		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2021-09-21 18:19:41		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2021-09-21 18:19:41		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2021-09-21 18:19:41		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-09-21 18:19:58	=!=	Error with command "/server freenode" (help on command: /help server)
+2021-09-21 18:20:11	=!=	irc: unable to add temporary server "freenode" because the addition of temporary servers with command /connect is currently disabled
+2021-09-21 18:20:11	=!=	irc: if you want to add a standard server, use the command "/server add" (see /help server); if you really want to add a temporary server (NOT SAVED), turn on the option irc.look.temporary_servers
+2021-09-21 18:20:28	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2021-09-21 18:20:34		[irc]  /server  list|listfull [<name>]
+2021-09-21 18:20:34		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-09-21 18:20:34		                copy|rename <name> <new_name>
+2021-09-21 18:20:34		                reorder <name> [<name>...]
+2021-09-21 18:20:34		                open <name>|-all [<name>...]
+2021-09-21 18:20:34		                del|keep <name>
+2021-09-21 18:20:34		                deloutq|jump
+2021-09-21 18:20:34		                raw [<filter>]
+2021-09-21 18:20:34		list, add or remove IRC servers
+2021-09-21 18:20:34		    list: list servers (without argument, this list is displayed)
+2021-09-21 18:20:34		listfull: list servers with detailed info for each server
+2021-09-21 18:20:34		     add: add a new server
+2021-09-21 18:20:34		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-09-21 18:20:34		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-09-21 18:20:34		   -temp: add a temporary server (not saved)
+2021-09-21 18:20:34		  option: set option for server (for boolean option, value can be omitted)
+2021-09-21 18:20:34		nooption: set boolean option to 'off' (for example: -nossl)
+2021-09-21 18:20:34		    copy: duplicate a server
+2021-09-21 18:20:34		  rename: rename a server
+2021-09-21 18:20:34		 reorder: reorder list of servers
+2021-09-21 18:20:34		    open: open the server buffer without connecting
+2021-09-21 18:20:34		    keep: keep server in config file (for temporary servers only)
+2021-09-21 18:20:34		     del: delete a server
+2021-09-21 18:20:34		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-09-21 18:20:34		    jump: jump to server buffer
+2021-09-21 18:20:34		     raw: open buffer with raw IRC data
+2021-09-21 18:20:34		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-09-21 18:20:34		            *       show all messages (no filter)
+2021-09-21 18:20:34		            xxx     show only messages containing "xxx"
+2021-09-21 18:20:34		            s:xxx   show only messages for server "xxx"
+2021-09-21 18:20:34		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-09-21 18:20:34		            m:xxx   show only IRC command "xxx"
+2021-09-21 18:20:34		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-09-21 18:20:34		Examples:
+2021-09-21 18:20:34		  /server listfull
+2021-09-21 18:20:34		  /server add freenode chat.freenode.net
+2021-09-21 18:20:34		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2021-09-21 18:20:34		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-09-21 18:20:34		  /server copy freenode freenode-test
+2021-09-21 18:20:34		  /server rename freenode-test freenode2
+2021-09-21 18:20:34		  /server reorder freenode2 freenode
+2021-09-21 18:20:34		  /server del freenode
+2021-09-21 18:20:34		  /server deloutq
+2021-09-21 18:20:34		  /server raw
+2021-09-21 18:20:34		  /server raw s:freenode
+2021-09-21 18:20:34		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-09-21 18:21:14		irc: server added: freenode
+2021-09-21 18:22:22	=!=	Error with command "/server quit" (help on command: /help server)
+2021-09-21 18:22:36		[irc]  /server  list|listfull [<name>]
+2021-09-21 18:22:36		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-09-21 18:22:36		                copy|rename <name> <new_name>
+2021-09-21 18:22:36		                reorder <name> [<name>...]
+2021-09-21 18:22:36		                open <name>|-all [<name>...]
+2021-09-21 18:22:36		                del|keep <name>
+2021-09-21 18:22:36		                deloutq|jump
+2021-09-21 18:22:36		                raw [<filter>]
+2021-09-21 18:22:36		list, add or remove IRC servers
+2021-09-21 18:22:36		    list: list servers (without argument, this list is displayed)
+2021-09-21 18:22:36		listfull: list servers with detailed info for each server
+2021-09-21 18:22:36		     add: add a new server
+2021-09-21 18:22:36		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-09-21 18:22:36		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-09-21 18:22:36		   -temp: add a temporary server (not saved)
+2021-09-21 18:22:36		  option: set option for server (for boolean option, value can be omitted)
+2021-09-21 18:22:36		nooption: set boolean option to 'off' (for example: -nossl)
+2021-09-21 18:22:36		    copy: duplicate a server
+2021-09-21 18:22:36		  rename: rename a server
+2021-09-21 18:22:36		 reorder: reorder list of servers
+2021-09-21 18:22:36		    open: open the server buffer without connecting
+2021-09-21 18:22:36		    keep: keep server in config file (for temporary servers only)
+2021-09-21 18:22:36		     del: delete a server
+2021-09-21 18:22:36		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-09-21 18:22:36		    jump: jump to server buffer
+2021-09-21 18:22:36		     raw: open buffer with raw IRC data
+2021-09-21 18:22:36		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-09-21 18:22:36		            *       show all messages (no filter)
+2021-09-21 18:22:36		            xxx     show only messages containing "xxx"
+2021-09-21 18:22:36		            s:xxx   show only messages for server "xxx"
+2021-09-21 18:22:36		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-09-21 18:22:36		            m:xxx   show only IRC command "xxx"
+2021-09-21 18:22:36		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-09-21 18:22:36		Examples:
+2021-09-21 18:22:36		  /server listfull
+2021-09-21 18:22:36		  /server add freenode chat.freenode.net
+2021-09-21 18:22:36		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2021-09-21 18:22:36		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-09-21 18:22:36		  /server copy freenode freenode-test
+2021-09-21 18:22:36		  /server rename freenode-test freenode2
+2021-09-21 18:22:36		  /server reorder freenode2 freenode
+2021-09-21 18:22:36		  /server del freenode
+2021-09-21 18:22:36		  /server deloutq
+2021-09-21 18:22:36		  /server raw
+2021-09-21 18:22:36		  /server raw s:freenode
+2021-09-21 18:22:36		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-09-21 18:26:04		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-09-21 18:36:18		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2021-09-21 18:36:54		Option changed: irc.server.freenode.username = "ubuntupunk"  (default if null: "afropunk")
+2021-09-21 18:40:43		Option changed: irc.server.freenode.ssl = on  (default if null: off)
+2021-09-21 18:41:05	=!=	Error: unknown command "/identify" (type /help for help)
+2021-09-21 18:41:15	=!=	Error with command "/server identity ubuntupunk qpzmal10" (help on command: /help server)
+2021-09-21 18:41:32	=!=	Error with command "/server identify ubuntupunk qpzmal10" (help on command: /help server)
+2021-09-21 18:41:40		All servers:
+2021-09-21 18:41:40		   freenode
+2021-09-21 18:41:46	=!=	Error with command "/server help" (help on command: /help server)
+2021-09-21 18:41:51		[irc]  /server  list|listfull [<name>]
+2021-09-21 18:41:51		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2021-09-21 18:41:51		                copy|rename <name> <new_name>
+2021-09-21 18:41:51		                reorder <name> [<name>...]
+2021-09-21 18:41:51		                open <name>|-all [<name>...]
+2021-09-21 18:41:51		                del|keep <name>
+2021-09-21 18:41:51		                deloutq|jump
+2021-09-21 18:41:51		                raw [<filter>]
+2021-09-21 18:41:51		list, add or remove IRC servers
+2021-09-21 18:41:51		    list: list servers (without argument, this list is displayed)
+2021-09-21 18:41:51		listfull: list servers with detailed info for each server
+2021-09-21 18:41:51		     add: add a new server
+2021-09-21 18:41:51		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2021-09-21 18:41:51		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2021-09-21 18:41:51		   -temp: add a temporary server (not saved)
+2021-09-21 18:41:51		  option: set option for server (for boolean option, value can be omitted)
+2021-09-21 18:41:51		nooption: set boolean option to 'off' (for example: -nossl)
+2021-09-21 18:41:51		    copy: duplicate a server
+2021-09-21 18:41:51		  rename: rename a server
+2021-09-21 18:41:51		 reorder: reorder list of servers
+2021-09-21 18:41:51		    open: open the server buffer without connecting
+2021-09-21 18:41:51		    keep: keep server in config file (for temporary servers only)
+2021-09-21 18:41:51		     del: delete a server
+2021-09-21 18:41:51		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2021-09-21 18:41:51		    jump: jump to server buffer
+2021-09-21 18:41:51		     raw: open buffer with raw IRC data
+2021-09-21 18:41:51		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2021-09-21 18:41:51		            *       show all messages (no filter)
+2021-09-21 18:41:51		            xxx     show only messages containing "xxx"
+2021-09-21 18:41:51		            s:xxx   show only messages for server "xxx"
+2021-09-21 18:41:51		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2021-09-21 18:41:51		            m:xxx   show only IRC command "xxx"
+2021-09-21 18:41:51		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2021-09-21 18:41:51		Examples:
+2021-09-21 18:41:51		  /server listfull
+2021-09-21 18:41:51		  /server add freenode chat.freenode.net
+2021-09-21 18:41:51		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2021-09-21 18:41:51		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2021-09-21 18:41:51		  /server copy freenode freenode-test
+2021-09-21 18:41:51		  /server rename freenode-test freenode2
+2021-09-21 18:41:51		  /server reorder freenode2 freenode
+2021-09-21 18:41:51		  /server del freenode
+2021-09-21 18:41:51		  /server deloutq
+2021-09-21 18:41:51		  /server raw
+2021-09-21 18:41:51		  /server raw s:freenode
+2021-09-21 18:41:51		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2021-09-21 18:42:09		Option changed: irc.server.freenode.sasl_mechanism = plain  (default if null: plain)
+2021-09-21 18:42:31		Option changed: irc.server.freenode.sasl_username = "ubuntupunk"  (default if null: "")
+2021-09-21 18:42:49		Option changed: irc.server.freenode.sasl_password = "qpzmal"  (default if null: "")
+2021-09-21 18:42:53		Options saved to sec.conf
+2021-09-21 18:42:53		Options saved to weechat.conf
+2021-09-21 18:42:53		Options saved to plugins.conf
+2021-09-21 18:42:53		Options saved to charset.conf
+2021-09-21 18:42:53		Options saved to logger.conf
+2021-09-21 18:42:53		Options saved to exec.conf
+2021-09-21 18:42:53		Options saved to trigger.conf
+2021-09-21 18:42:53		Options saved to spell.conf
+2021-09-21 18:42:53		Options saved to alias.conf
+2021-09-21 18:42:53		Options saved to buflist.conf
+2021-09-21 18:42:53		Options saved to fifo.conf
+2021-09-21 18:42:53		Options saved to xfer.conf
+2021-09-21 18:42:53		Options saved to irc.conf
+2021-09-21 18:42:53		Options saved to relay.conf
+2021-09-21 18:42:53		Options saved to perl.conf
+2021-09-21 18:42:53		Options saved to ruby.conf
+2021-09-21 18:42:53		Options saved to python.conf
+2021-09-21 18:42:53		Options saved to script.conf
+2021-09-21 18:42:53		Options saved to fset.conf
+2021-09-21 18:43:19	=!=	irc: command "list" must be executed on connected irc server
+2021-09-21 18:43:27		All servers:
+2021-09-21 18:43:27		   freenode

@@ -1,0 +1,14 @@
+include "~/.config/nano/syntax/ALL.nanorc"
+include "/usr/share/nano/*.nanorc"
+
+set linenumbers
+set autoindent
+set mouse
+set smooth
+set softwrap
+set tabsize 4
+set tabstospaces
+
+#set titlecolor $foreground,$background
+#set $foreground red
+#set $background yellow

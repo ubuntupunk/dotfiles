@@ -1,0 +1,153 @@
+# use 256 term for pretty colors
+set -g default-terminal "xterm-256color"
+set -g status-bg black
+set -g status-fg green
+set-window-option -g clock-mode-colour brightyellow
+
+# increase scroll-back history
+set -g history-limit 1000000
+
+# use vim key bindings
+setw -g mode-keys vi
+
+# enable mouse
+set -g mouse on
+
+# Enable mouse control (clickable windows, panes, resizable panes)
+set -g mouse-select-window on
+set -g mouse-select-pane on
+set -g mouse-resize-pane on
+
+# decrease command delay (increases vim responsiveness)
+set -sg escape-time 0
+
+# increase repeat time for repeatable commands
+set -g repeat-time 1000
+
+# start window index at 1
+set -g base-index 1
+
+# start pane index at 1
+setw -g pane-base-index 1
+
+# highlight window when it has new activity
+setw -g monitor-activity on
+set -g visual-activity on
+
+# re-number windows when one is closed
+set -g renumber-windows on
+
+# enable vi nav and v / V when in copy mode (space == yank)
+set -g mode-keys vi
+
+# enable pbcopy and pbpaste
+# https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard/blob/master/README.md
+#set-option -g default-command "reattach-to-user-namespace -l zsh"
+
+###########################
+#  Key Bindings
+###########################
+
+# tmux prefix
+unbind C-b
+set -g prefix C-a
+bind-key C-a send-prefix
+
+bind C-c run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
+bind C-v run "reattach-to-user-namespace pbpaste | tmux load-buffer - && tmux paste-buffer"
+# bind y run-shell "reattach-to-user-namespace -l zsh -c 'tmux show-buffer | pbcopy'"
+
+# copy
+bind [ copy-mode
+bind ] paste-buffer
+# buffer
+bind space choose-buffer
+
+# window splitting
+unbind %
+bind | split-window -h -c "#{pane_current_path}"
+unbind '"'
+bind - split-window -v -c "#{pane_current_path}"
+
+# resize panes
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# create 25% lower split
+unbind t
+bind t split-window -v -c "#{pane_current_path}"
+
+# quickly switch panes
+unbind ^F
+bind ^F select-pane -t :.+
+
+# navigate panes
+bind -r h select-pane -L
+bind -r j select-pane -D
+bind -r k select-pane -U
+bind -r l select-pane -R
+
+# zoom into one pane
+unbind +
+bind + \
+  new-window -d -n tmux-zoom 'clear && echo TMUX ZOOM && read' \;\
+  swap-pane -s tmux-zoom.0 \;\
+  select-window -t tmux-zoom
+
+unbind -
+bind - \
+  last-window \;\
+  swap-pane -s tmux-zoom.0 \;\
+  kill-window -t tmux-zoom
+
+# switch panes using Alt-arrow without prefix
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# don't rename windows automatically
+set-option -g allow-rename off
+
+bind r source-file ~/.tmux.conf
+
+######################
+### DESIGN CHANGES ###
+######################
+
+# loud or quiet?
+set -g visual-activity off
+set -g visual-bell off
+set -g visual-silence off
+setw -g monitor-activity off
+set -g bell-action none
+
+#  modes
+setw -g clock-mode-colour colour5
+setw -g mode-style 'fg=colour1 bg=colour18 bold'
+
+# panes
+set -g pane-border-style 'fg=colour19 bg=colour0'
+set -g pane-active-border-style 'bg=colour0 fg=colour9'
+
+# statusbar
+set -g status-position bottom
+set -g status-justify left
+set -g status-style 'bg=colour18 fg=colour137 dim'
+set -g status-left ''
+set -g status-right '#[fg=colour233,bg=colour19] %d/%m #[fg=colour233,bg=colour8] %H:%M:%S '
+set -g status-right-length 50
+set -g status-left-length 20
+
+setw -g window-status-current-style 'fg=colour1 bg=colour19 bold'
+setw -g window-status-current-format ' #I#[fg=colour249]:#[fg=colour255]#W#[fg=colour249]#F '
+
+setw -g window-status-style 'fg=colour9 bg=colour18'
+setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+
+setw -g window-status-bell-style 'fg=colour255 bg=colour1 bold'
+
+# messages
+set -g message-style 'fg=colour232 bg=colour16 bold'

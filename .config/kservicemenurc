@@ -1,0 +1,5 @@
+[Show]
+kactivitymanagerd_fileitem_linking_plugin=true
+kdeconnectfileitemaction=true
+sharefileitemaction=true
+tagsfileitemaction=true

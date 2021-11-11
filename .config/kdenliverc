@@ -1,0 +1,103 @@
+[KFileDialog Settings]
+Recent Files[$e]=Judicial Service Commission Constitutional Court Judge Interviews-80nSMfrL6Tg.f136.mp4,file:$HOME/Downloads/EFF - Land and Jobs Manje!-3YH8oHgh8y8.mp4,file:$HOME/Videos/244997763_854717258533772_1867787432218459539_n.mp4,file:$HOME/Downloads/Women\\, the Elderly and Children BRUTALLY Attacked by SAPS-SU80vcI5sm8.mp4,file:$HOME/Downloads/OHM Leader Attacked By Police-J1xZ3YX_XLs.mp4,file:$HOME/Downloads/Judicial Service Commission interviews Day 2 _ 13 April 2021--5RgJB_ifwg.mp4
+Recent URLs[$e]=file:$HOME/Downloads/
+detailViewIconSize=0
+
+[MainWindow]
+Height 1080=494
+State=AAAA/wAAAAD9AAAAAQAAAAIAAAdUAAABafwBAAAADvsAAAAYAG4AbwB0AGUAcwBfAHcAaQBkAGcAZQB0AAAAAAD/////AAAARgD////7AAAADgBsAGkAYgByAGEAcgB5AAAAAAD/////AAAAWAD////7AAAAFABzAGMAcgBlAGUAbgBnAHIAYQBiAAAAAAD/////AAAARwD////7AAAAGgBhAHUAZABpAG8AcwBwAGUAYwB0AHIAdQBtAAAAAAD/////AAAAaQD////7AAAAFgBwAHIAbwBqAGUAYwB0AF8AYgBpAG4BAAAAAAAAAQ8AAABGAP////wAAAEVAAAB1AAAAHsA////+gAAAAABAAAAAvsAAAAYAGUAZgBmAGUAYwB0AF8AcwB0AGEAYwBrAQAAAAD/////AAAARAD////7AAAAHgBjAGwAaQBwAF8AcAByAG8AcABlAHIAdABpAGUAcwEAAAAA/////wAAAEQA/////AAAAu8AAAHUAAAAewD////6AAAAAAEAAAAC+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAAAP////sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAAA/////AAABMkAAAKLAAABQAD////6AAAAAQEAAAAC+wAAABgAYwBsAGkAcABfAG0AbwBuAGkAdABvAHIBAAAAAP////8AAAFAAP////sAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAAD/////AAABQAD////7AAAAGAB1AG4AZABvAF8AaABpAHMAdABvAHIAeQAAAAAA/////wAAAEYA////+wAAAAoAbQBpAHgAZQByAAAABn4AAAECAAAAWQD////7AAAAFgB2AGUAYwB0AG8AcgBzAGMAbwBwAGUAAAAAAP////8AAAEoAP////sAAAAQAHcAYQB2AGUAZgBvAHIAbQAAAAAA/////wAAAKAA////+wAAABQAcgBnAGIAXwBwAGEAcgBhAGQAZQAAAAAA/////wAAAJ0A////+wAAABIAaABpAHMAdABvAGcAcgBhAG0AAAAAAP////8AAAE5AP///wAAB1QAAAAqAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAGABlAHgAdAByAGEAVABvAG8AbABCAGEAcgEAAAIf/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=1876
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Downloads/,$HOME/Videos/,$HOME/Videos
+KdenliveProjectsFolder[$e]=$HOME/Videos,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Videos/unter.kdenlive
+File2[$e]=$HOME/Videos/unter2.kdenlive
+File3[$e]=$HOME/Videos/ohm.kdenlive
+File4[$e]=$HOME/Videos/eff.kdenlive
+Name1[$e]=unter.kdenlive
+Name2[$e]=unter2.kdenlive
+Name3[$e]=ohm.kdenlive
+Name4[$e]=eff.kdenlive
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[UiSettings]
+ColorScheme=Breeze Dark
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAADBgAAAAIAAAACAAAAZAAAAAEAAAA5AAABawAAAAMBAQABAAAAAAAAAAAAAAAAZP////8AAACBAAAAAAAAAAMAAAFrAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAPoAAAAAEA=
+
+[capture]
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+defaultaudioapp=/usr/bin/audacity
+defaultimageapp=/usr/bin/gimp
+defaultprojectfolder[$e]=$HOME/Videos
+ffmpegpath[$e]=/usr/bin/ffmpeg
+ffplaypath[$e]=/usr/bin/ffplay
+ffprobepath[$e]=/usr/bin/ffprobe
+mltpath[$e]=/usr/share/mlt/profiles
+rendererpath[$e]=/usr/bin/melt
+
+[project]
+vaapiEnabled=true
+
+[timeline]
+audiothumbnails=false
+trackheight=61
+
+[unmanaged]
+automatictransitions=false
+default_profile=atsc_1080p_25
+defaultrescaleheight=176
+force_breeze=true
+monitor_audio=false
+producerslist=avformat,avformat-novalidate,xml,xml-string,xml-nogl,pgm,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,framebuffer,vorbis,slowmotion,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,qimage,qtext,kdenlivetitle,pango,pixbuf,ladspa.1416,ladspa.1770,ladspa.1769,ladspa.1774,ladspa.1781,ladspa.1785,ladspa.1885,ladspa.1881,decklink,blipflash,count
+snaptopoints=false
+use_dark_breeze=true
+widgetstyle=Default
+
+[version]
+version=19.12.3

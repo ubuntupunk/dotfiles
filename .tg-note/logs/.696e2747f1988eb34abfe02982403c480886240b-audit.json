@@ -1,0 +1,24 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/afropunk/.tg-note/logs/.696e2747f1988eb34abfe02982403c480886240b-audit.json",
+    "files": [
+        {
+            "date": 1634996701390,
+            "name": "/home/afropunk/.tg-note/logs/TiddlyGit-2021-10-23.log",
+            "hash": "b081a21d8b1d0e912aa618272fd4f011"
+        },
+        {
+            "date": 1635071262754,
+            "name": "/home/afropunk/.tg-note/logs/TiddlyGit-2021-10-24.log",
+            "hash": "c50e6ec0662a0b94c0f82a7157771e84"
+        },
+        {
+            "date": 1635575669654,
+            "name": "/home/afropunk/.tg-note/logs/TiddlyGit-2021-10-30.log",
+            "hash": "83cca7bb4b3cd0f9d9100ab4680efba4"
+        }
+    ]
+}
