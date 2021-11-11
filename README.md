@@ -5,7 +5,8 @@
 - i3-gaps
 - [i3status-rust](https://github.com/greshake/i3status-rust)
 - polybar
-- rofi
+- rofi<br>
+[rofi-collection](https://github.com/adi1090x/rofi)
 - wal
 
 
@@ -49,6 +50,8 @@
 - lighthaus
 - nord
 - dracula
+## Startup Themes
+[plymouth themes](https://github.com/adi1090x/plymouth-themes)
 
 
 
