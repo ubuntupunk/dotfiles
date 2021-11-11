@@ -35,7 +35,7 @@
 - ueberzug
 - vifm
 - watson
-- ytfzf
+- [ytfzf](https://github.com/pystardust/ytfzf), youtube fuzzy finder
 - zathura
 
 
