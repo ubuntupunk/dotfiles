@@ -44,7 +44,7 @@
 - hyper
 - urxvt-unicode
 - tmux
-- zellij
+- [zellij](https://github.com/zellij-org/zellij), terminal workspace
 
 # Themes
 - [lighthaus](https://github.com/lighthaus-theme)
