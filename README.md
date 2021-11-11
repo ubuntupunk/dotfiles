@@ -21,7 +21,7 @@
 - [handbrake](https://github.com/HandBrake/HandBrake)
 - htop
 - nvim
-- newsboat
+- [newsboat](https://github.com/newsboat/newsboat), feed reader
 - mpv
 - neomutt
 - plocate
