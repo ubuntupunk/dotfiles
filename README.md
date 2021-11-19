@@ -30,7 +30,7 @@
 - ranger
 - [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
-- spotifycli 
+- [spotify-cli](https://github.com/pwittchen/spotify-cli-linux)
 - [sxiv](https://github.com/muennich/sxiv)
 - torify
 - ueberzug
