@@ -37,7 +37,7 @@
 - vifm
 - watson
 - [ytfzf](https://github.com/pystardust/ytfzf), youtube fuzzy finder
-- zathura
+- [zathura](https://github.com/pwmt/zathura)
 
 
 # Terms
