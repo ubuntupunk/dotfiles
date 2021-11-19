@@ -31,7 +31,7 @@
 - [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
 - spotifycli 
-- sxiv
+- [sxiv](https://github.com/muennich/sxiv)
 - torify
 - ueberzug
 - vifm
