@@ -29,8 +29,8 @@
 - [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code
 - ranger
 - [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
-- spicetify
-- spotifycli
+- [spicetify-cli](https://github.com/khanhas/spicetify-cli)
+- spotifycli 
 - sxiv
 - torify
 - ueberzug
