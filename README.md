@@ -24,7 +24,7 @@
 - nvim
 - [newsboat](https://github.com/newsboat/newsboat), feed reader
 - mpv
-- neomutt
+- [neomutt](https://github.com/neomutt/neomutt)
 - plocate
 - [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code
 - ranger
