@@ -49,8 +49,8 @@
 
 # Themes
 - [lighthaus](https://github.com/lighthaus-theme)
-- nord
-- dracula
+- [nord](https://github.com/arcticicestudio/nord)
+- [dracula](https://github.com/dracula/dracula-theme)
 ## Startup Themes
 [plymouth themes](https://github.com/adi1090x/plymouth-themes)
 
