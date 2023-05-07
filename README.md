@@ -21,13 +21,13 @@
 - [fzf](https://github.com/junegunn/fzf), fuzzy find
 - [handbrake](https://github.com/HandBrake/HandBrake)
 - htop
+- [joshuto](https://github.com/kamiyaa/joshuto), ranger-replacement written in rust
 - nvim
 - [newsboat](https://github.com/newsboat/newsboat), feed reader
 - mpv
 - [neomutt](https://github.com/neomutt/neomutt)
 - [plocate](https://github.com/loveencounterflow/plocate)
 - [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code
-- ranger
 - [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli)
 - [spotify-cli](https://github.com/pwittchen/spotify-cli-linux)
