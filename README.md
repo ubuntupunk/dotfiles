@@ -29,11 +29,10 @@
 - [plocate](https://github.com/loveencounterflow/plocate)
 - [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code
 - [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
-- [spicetify-cli](https://github.com/khanhas/spicetify-cli)
-- [spotify-cli](https://github.com/pwittchen/spotify-cli-linux)
-- [sxiv](https://github.com/muennich/sxiv)
+- [spicetify-cli](https://github.com/khanhas/spicetify-cli), spice up your spotify via cli
+- [spotify-cli](https://github.com/pwittchen/spotify-cli-linux), spotify cli
+- [sxiv](https://github.com/muennich/sxiv), Simple X Image Viewer
 - torify
-- ueberzug
 - vifm
 - watson
 - [ytfzf](https://github.com/pystardust/ytfzf), youtube fuzzy finder
