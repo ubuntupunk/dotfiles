@@ -15,6 +15,7 @@
 - [batcat](https://docs.rs/crate/bat/0.12.1) colourful cat written in rust
 - [cava](https://github.com/karlstav/cava), alsa sound
 - [cod](https://github.com/dim-an/cod), completion daemon for bash, fish etc
+- [devdash](https://github.com/Phantas0s/devdash), system monitoring
 - [devour](https://github.com/salman-abedin/devour), x11 window swallower
 - [feh](https://github.com/derf/feh), fast and light image viewer
 - [flameshot](https://github.com/flameshot-org/flameshot), screenshot utility
