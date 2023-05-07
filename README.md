@@ -11,6 +11,7 @@
 
 
 # Cli Apps
+- [amfora](https://github.com/makew0rld/amfora), gemini, gopher cli-browser
 - [bolt](https://github.com/salman-abedin/bolt)
 - [batcat](https://docs.rs/crate/bat/0.12.1) colourful cat written in rust
 - [cava](https://github.com/karlstav/cava), alsa sound
