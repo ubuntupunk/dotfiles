@@ -34,6 +34,7 @@
 - [sxiv](https://github.com/muennich/sxiv), Simple X Image Viewer
 - torify
 - vifm
+- [vtop](https://github.com/MrRio/vtop), better than htop
 - watson
 - [ytfzf](https://github.com/pystardust/ytfzf), youtube fuzzy finder
 - [zathura](https://github.com/pwmt/zathura)
