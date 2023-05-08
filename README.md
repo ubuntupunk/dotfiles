@@ -35,7 +35,7 @@
 - [spotify-cli](https://github.com/pwittchen/spotify-cli-linux), spotify cli
 - [sxiv](https://github.com/muennich/sxiv), Simple X Image Viewer
 - torify
-- vifm
+- [vifm](https://github.com/vifm/vifm), curses based Vim-like file manager 
 - [vtop](https://github.com/MrRio/vtop), better than htop
 - watson
 - [ytfzf](https://github.com/pystardust/ytfzf), youtube fuzzy finder
