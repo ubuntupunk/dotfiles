@@ -12,7 +12,7 @@
 
 # Cli Apps
 - [amfora](https://github.com/makew0rld/amfora), gemini, gopher cli-browser
-- [bolt](https://github.com/salman-abedin/bolt)
+- [bolt](https://github.com/salman-abedin/bolt), launcher wrapper for having a lightning fast Unix workflow
 - [batcat](https://docs.rs/crate/bat/0.12.1) colourful cat written in rust
 - [cava](https://github.com/karlstav/cava), alsa sound
 - [cod](https://github.com/dim-an/cod), completion daemon for bash, fish etc
