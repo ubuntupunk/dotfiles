@@ -30,7 +30,7 @@
 - [neomutt](https://github.com/neomutt/neomutt)
 - [plocate](https://github.com/loveencounterflow/plocate), fast `locate` to find files 
 - [qrcp](https://github.com/claudiodangelis/qrcp) - Transfer files over Wi-Fi from your computer to a mobile device by scanning a QR code
-- [rtv](https://github.com/michael-lazar/rtv) reddit client, no longer maintained
+- [rtv](https://github.com/michael-lazar/rtv) super-excellent reddit client, no longer maintained, anyone care to fork?
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli), spice up your spotify via cli
 - [spotify-cli](https://github.com/pwittchen/spotify-cli-linux), spotify cli
 - [sxiv](https://github.com/muennich/sxiv), Simple X Image Viewer
@@ -46,6 +46,7 @@
 - alacritty
 - hyper
 - urxvt-unicode
+- [stterm](https://manpages.ubuntu.com/manpages/bionic/man1/stterm.1.html) - suckless tools terminal aka simple terminal
 - tmux
 - [zellij](https://github.com/zellij-org/zellij), terminal workspace
 
