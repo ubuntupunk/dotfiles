@@ -1,6 +1,9 @@
 # Dev Dav's i3 Pi 3B config file (v1.0.0)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
+#
+# rofi is only required dependency,everything will work out of the box when you install i3wm, 
+# place this config in .config/i3 and copy my rofi .config/rofi folder
 
 #---------+
 #VARIABLES|
