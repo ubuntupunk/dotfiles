@@ -1,4 +1,4 @@
-# Dev Dav's i3 config file (v4.0.0)
+# Dev Dav's i3 Pi 3B config file (v1.0.0)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -8,7 +8,9 @@
 
 set $alt Mod1
 set $mod Mod4  
-set $term alacritty
+set $term i3-sensible-terminal
+set $term2 sakura
+set $browser epiphany-browser
 #set $terms "1: terms"
 #set $web "2: web"
 #set $nautilus "3: files"
@@ -24,12 +26,12 @@ set $term alacritty
 #----------+
 
 #Set i3-gaps
-gaps inner 10
-gaps outer 10
+#gaps inner 10
+#gaps outer 10
 
 # make it smart
-smart_gaps on
-smart_borders no_gaps
+#smart_gaps on
+#smart_borders no_gaps
 
 #--------------------------+
 #DEFINE STYLES FOR WINDOWS |
@@ -114,36 +116,36 @@ exec --no-startup-id dunst -config ~/.config/dunst/dunstrc
 #--------------------+
 
 #https://github.com/salman-abedin/bolt
-exec --no-startup-id bolt --generate
+#exec --no-startup-id bolt --generate
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec --no-startup-id nm-tray
 
 #start my clipboard manager
-exec --no-startup-id diodon
+#exec --no-startup-id diodon
 
 #start my messenger
-exec --no-startup-id whatsdesk
+#exec --no-startup-id whatsdesk
 
 #start my launcher
-exec --no-startup-id albert
+#exec --no-startup-id albert
 
 #start up volume control applet
-exec --no-startup-id pa-applet
+#exec --no-startup-id pa-applet
 
 #start my notes
-exec --no-startup-id gnote
+#exec --no-startup-id gnote
 
-#start vivaldi on $ws2
-exec --no-startup-id i3-msg 'workspace $ws2; exec vivaldi; workspace $ws2'
+#start browser on $ws2
+exec --no-startup-id i3-msg 'workspace $ws2; exec $browser; workspace $ws2'
 
 #startup spotify
-exec --no-startup-id i3-msg 'workspace $ws4; exec spotify; workspace $ws4'
+#exec --no-startup-id i3-msg 'workspace $ws4; exec spotify; workspace $ws4'
 
 # Add this to your .xinitrc or whatever file starts programs on startup.
 # -R restores the last colorscheme that was in use.
-exec --no-startup-id wal -R
+#exec --no-startup-id wal -R
 
 #-------+-----+
 #SYSTEM HACKS |
@@ -234,9 +236,9 @@ bindsym $mod+Shift+m exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@
 #----+
 
 # start another terminal emulator
-bindsym $alt+Return exec alacritty
-bindsym $alt+backslash exec kitty
-bindsym $alt-] exec $term -e zellij
+bindsym $alt+return exec -e $term
+bindsym $alt+backslash exec $term2
+bindsym $alt-] exec $term -e $term3
 
 #bindsym $alt+Shift+backslash exec 
 
@@ -427,16 +429,10 @@ bindsym $alt+Shift+0 move container to workspace number $ws10
 		#assign [class="LibreOffice"] → 4
 		for_window [class="LibreOffice"] move container to workspace 4
 
-	# Popcorn
-                assign [class="^popcorn$"] → 7
-		for_window [class="^popcorn$"] fullscreen
         
         # Pulsaudio
                 assign [class="Pavucontrol"] → 4
         
-        # Skype
-                assign [class="Skype"] → 3
-                for_window [class="Skype"] tabbed 
 
         # Steam
                 assign [class="Steam"] → 8
@@ -532,25 +528,6 @@ bindsym Print exec screenshot
 bindsym $alt+Ctrl+m exec $term -e 'alsamixer'
 bindsym $alt+Ctrl+x --release exec --no-startup-id xkill
 
-#-------------#
-#APP LAUNCHER |
-#-------------#
-
-# Press $alt+o followed by either f, t, Escape or Return to launch firefox,
-# vivaldi or return to the default mode, respectively.
-set $alte_launcher Launch: [f]irefox [v]ivaldi
-bindsym $alt+o mode "$alte_launcher"
-
-mode "$alte_launcher" {
-    bindsym f exec firefox
-    bindsym v exec vivaldi
-    bindsym b exec brave
-    bindym  c exec chromium
-    bindsym p exec popcorn
-	
-    bindsym Escape mode "default"
-    bindsym Return mode "default"
-}
 
 #----some scripts---#
 
@@ -565,23 +542,28 @@ bindsym $alt+Ctrl+f exec python "~/.config/i3/scripts/fibonacci.py"
 #STATUSBARS|
 #----------+
 
+
 bar {
-    font pango:DejaVu Sans Mono, FontAwesome 12
-    position bottom
-    mode hide
-    hidden_state hide
-    modifier Mod1
-    status_command ~/.cargo/bin/i3status-rs ~/.config/i3/config.toml
-    colors {
-        separator #333333
-        background #2c001e
-        statusline #aea79f
-        focused_workspace #dd4814 #dd4814 #ffffff #fdf6e3
-        active_workspace #902a07 #902a07 #aea79f #fdf6e3
-        inactive_workspace #902a07 #902a07 #aea79f #002b36
-        urgent_workspace #77216f #77216f #ffffff #fdf6e3
-    }
+status_command i3status
 }
+
+#bar {
+#    font pango:DejaVu Sans Mono, FontAwesome 12
+#    position bottom
+#    mode hide
+#    hidden_state hide
+#    modifier Mod1
+#    status_command ~/.cargo/bin/i3status-rs ~/.config/i3/config.toml
+#    colors {
+#        separator #333333
+#        background #2c001e
+#        statusline #aea79f
+#        focused_workspace #dd4814 #dd4814 #ffffff #fdf6e3
+#        active_workspace #902a07 #902a07 #aea79f #fdf6e3
+#        inactive_workspace #902a07 #902a07 #aea79f #002b36
+#        urgent_workspace #77216f #77216f #ffffff #fdf6e3
+#    }
+#}
 
 set $refresh_i3status killall -SIGUSR1 i3status
 
