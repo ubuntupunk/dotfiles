@@ -50,6 +50,20 @@
 - tmux
 - [zellij](https://github.com/zellij-org/zellij), terminal workspace
 
+# Replacements for Popular Code Hogs
+- [poetry](https://python-poetry.org) - replacement python package manager
+  ```
+  curl -sSL https://install.python-poetry.org | python3 -
+  ```
+- [volta](https://volta.sh/) -- replacement for NVM, javascript tool manager
+  ```
+  curl https://get.volta.sh | bash  
+  ```
+ - [bun](https://bun.sh/) -- fast replacement for npm npx
+```
+curl -fsSL https://bun.sh/install | bash
+```
+  
 # Themes
 - [lighthaus](https://github.com/lighthaus-theme)
 - [nord](https://github.com/arcticicestudio/nord)
