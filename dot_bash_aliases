@@ -1,10 +1,13 @@
-alias chez="chezmoi"
-alias nep="cd /media/afrodeity/Neptune/"
-alias sexthera="ssh sexthera@ams-node7.websitehostserver.net"
-alias pactivate="source jupyterenv/bin/activate"
-alias acs="apt-cache search"
-alias lskern="dpkg --list | egrep -i --color 'linux-image|linux-headers|linux-modules' | awk '{ print $2 }'"
-alias vup="cd /media/afrodeity/Neptune/vagrant/vvv-local/ && vagrant up"
-alias vhalt="cd /media/afrodeity/Neptune/vagrant/vvv-local/ && vagrant halt"
-alias wpinit="mdb wordpress init"
-alias devpurge="pip cache purge  && npm cache clean && cargo cache -a && poetry cache clear --all ."
+U2FsdGVkX1/56l5tKker9OOV5tair68HU4BPe5XZCG7dCDsvDI29r9iAPVErKUVV
+SdTaDLVa1eXtQ4140N5m9pVy5ZUMzoIgYpkPtvHjMItEsn4FFZxwN2J8lvF3DVAu
+SWo1wFGnMEdVhb1rtQ6CwuB53kXf61iuSiR9dr/QHTbuykIoz72+PdXdmM4hVa4q
+ANtoK4ok8ws87EcqOZocpsjdYd3frHyFP/dwm+o5xakf+V/Lytpb7TSxF+LsbmsK
+3fKuri2+QFvnBtCqp0bZGQcrXr4uCMdV6Cits4R+kkuDrhKdluN9xtz2QXTpWqDb
+r9gvLDsC1sKHTlNqYFq+VlNBu3FW2XTjZAJwKgj2smaN5wUtI4Z604nNzpKAhYHT
+yoOAB/6EjCSM6TjH7C869inU1nlSMlq1ISMmnF/5nt7idbFMdB0GgIv48Dz1/6rK
+c5u7vtDQ553frEmRjoJoYziLMuc8TSqi5J2R2rIqSB69fA0VGOFppdmg9hNthsQ+
+aLjwyFRO5vaWYas7Qw1Nz8iGa54OAeXRPdBvQZS8tzpwxZILCf4W4ESfyphk65PV
+RETgruvn6J+V1Iuv2eFShecJM2ze07pSgWRN7BJTpeeJC/P7WywFOuF2Z5+wkGVx
+iGIgRbaShTguQQBQCIwyYetLGtw1nMTujgLcFLUBjOR57MHhxSUETLpa+Pj2BlQg
+2m40h8lf96Gusb4kh9vx0LgN6Zwjxb+XI/Ot7TY5kbuUYp6RBJNVwBlactHEumaN
+og/kBNiXw2jTcj1EULyDiJr8RRElbE1ivlTEvff0VVosv56Msk/rd+2MNXqdcNbm
