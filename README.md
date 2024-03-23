@@ -15,6 +15,7 @@
 - [bolt](https://github.com/salman-abedin/bolt), launcher wrapper for having a lightning fast Unix workflow
 - [batcat](https://docs.rs/crate/bat/0.12.1) colourful cat written in rust
 - [cava](https://github.com/karlstav/cava), alsa sound
+- [chezmoi](https://www.chezmoi.io/) dotfile manager
 - [cod](https://github.com/dim-an/cod), completion daemon for bash, fish etc
 - [devdash](https://github.com/Phantas0s/devdash), system monitoring
 - [devour](https://github.com/salman-abedin/devour), x11 window swallower
@@ -34,6 +35,7 @@
 - [spicetify-cli](https://github.com/khanhas/spicetify-cli), spice up your spotify via cli
 - [spotify-cli](https://github.com/pwittchen/spotify-cli-linux), spotify cli
 - [sxiv](https://github.com/muennich/sxiv), Simple X Image Viewer
+- [transcrypt](https://github.com/elasticdog/transcrypt), secrets manager works with git
 - torify
 - [vifm](https://github.com/vifm/vifm), curses based Vim-like file manager 
 - [vtop](https://github.com/MrRio/vtop), better than htop
