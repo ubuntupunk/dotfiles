@@ -1,14 +1,12 @@
-alias chez="chezmoi"
-alias geeks="ssh sexthera@ams104.greengeeks.net"
-alias files="joshuto"
-alias puffin="puffin-internet-terminal-demo"
-alias acs="apt-cache search"
-alias duck="ddgr"
-alias sdf="mosh ubuntupunk@sdf.org"
-alias lag="flatpak run fi.skyjake.Lagrange"
-alias gemini="lag"
-alias reddit="rtv"
-alias acs="apt-cache search"
-alias browser="flow"
-alias kpuff="kill $(ps aux | grep 'puffin*' | awk '{print $2}')"
-alias lsblk="lsblk -o NAME,LABEL,PARTLABEL,TYPE,FSTYPE,SIZE,MOUNTPOINT,STATE"   # The columns I want to see in lsblk
+U2FsdGVkX19+5YaKp79SfH7LXFX1eT7Gaqt2JDMoVylde1AX9T5Ij6R0a/WnmrR1
+sJWmcZLDzz8Bbjpt9ZnvL7ACvN5re/k9oNcoHygIiwiUj97Bn2k2PsKQdUHEta9w
+HDZ0/u6kklbilCuxez8DwdKv0qEKf5KmjghrXa5B6FxF8b/BBdX/2B+c72Nok1PN
+1M2xgODKXa18zNa+aWQEKhdfH4wUwsZweq5mDBIR40etFG9LVJIC4QFhl4rcvaur
+mSxGUja+BI2E9+YKEJY1vQZq8F9UmWuWn7a+ssx0xb5CxzOyq0bAIfuAFA5dVDfW
+7tFeqHpht40J5Ypqfypv1W0IukTAGr8dr+bBfUIgF1rVVNbgtW6UFcyIZ1VeWNdh
+zlFZGqmlE0Fp9vAWTKZXgcDoIByOp8fH6EOaXmMbBGSu77h6icxfq804e8lRrDPu
+vsTuMIaxT+tSYpMf2V6QHtUjRg9f7hb365CVkufI4wnaeYiwdy3FW6FxINd4EWh0
+2AAQAGTXgo34C8I13NDUrVD3x5wGj1/gY0h3PExr7IsKTW1UF+ijinOCS1EptQDu
+HYcXTS6UYZGveoWBG3CvBhGmn5Zee2DmGtOLYqp28MY1ZDo+IELgwUJTUgTsbiuu
+VDwvTDNQFPieHV4g/dSIFjO5/t7dHH6TYnmOgcBnk+E+SsRo9+AXGn1prF9Gg1A+
+SBfI0cpscLCrc8kVmmOA0TDlVywPh/yKfcm5EuXEt4Q=

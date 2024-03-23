@@ -1,0 +1,2 @@
+#pattern  filter=crypt diff=crypt merge=crypt
+dot_bash_aliases  filter=crypt diff=crypt merge=crypt
