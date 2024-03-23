@@ -1,0 +1,388 @@
+2023-09-29 21:13:38		New key binding (context "default"): meta2-1;5P => /bar scroll buflist * -100%
+2023-09-29 21:13:38		New key binding (context "default"): meta2-1;5Q => /bar scroll buflist * +100%
+2023-09-29 21:13:38		New key binding (context "default"): meta-meta-OQ => /bar scroll buflist * e
+2023-09-29 21:13:38		New key binding (context "default"): meta2-1;3Q => /bar scroll buflist * e
+2023-09-29 21:13:38		New key binding (context "default"): meta2-1;3P => /bar scroll buflist * b
+2023-09-29 21:13:38		New key binding (context "default"): meta-meta-OP => /bar scroll buflist * b
+2023-09-29 21:13:38		New key binding (context "default"): meta-B => /buflist toggle
+2023-09-29 21:13:38		New key binding (context "default"): meta-OQ => /bar scroll buflist * +100%
+2023-09-29 21:13:38		New key binding (context "default"): meta-OP => /bar scroll buflist * -100%
+2023-09-29 21:13:38		New key binding (context "default"): meta-meta2-12~ => /bar scroll buflist * e
+2023-09-29 21:13:38		New key binding (context "default"): meta-meta2-11~ => /bar scroll buflist * b
+2023-09-29 21:13:38		New key binding (context "default"): meta2-12^ => /bar scroll buflist * +100%
+2023-09-29 21:13:38		New key binding (context "default"): meta2-12~ => /bar scroll buflist * +100%
+2023-09-29 21:13:38		New key binding (context "default"): meta2-11^ => /bar scroll buflist * -100%
+2023-09-29 21:13:38		New key binding (context "default"): meta2-11~ => /bar scroll buflist * -100%
+2023-09-29 21:13:38		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
+2023-09-29 21:13:51	=!=	Error with command "/server freenode" (help on command: /help server)
+2023-09-29 21:13:55		No server
+2023-09-29 21:14:01		[irc]  /server  list|listfull [<name>]
+2023-09-29 21:14:01		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2023-09-29 21:14:01		                copy|rename <name> <new_name>
+2023-09-29 21:14:01		                reorder <name> [<name>...]
+2023-09-29 21:14:01		                open <name>|-all [<name>...]
+2023-09-29 21:14:01		                del|keep <name>
+2023-09-29 21:14:01		                deloutq|jump
+2023-09-29 21:14:01		                raw [<filter>]
+2023-09-29 21:14:01		list, add or remove IRC servers
+2023-09-29 21:14:01		    list: list servers (without argument, this list is displayed)
+2023-09-29 21:14:01		listfull: list servers with detailed info for each server
+2023-09-29 21:14:01		     add: add a new server
+2023-09-29 21:14:01		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2023-09-29 21:14:01		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2023-09-29 21:14:01		   -temp: add a temporary server (not saved)
+2023-09-29 21:14:01		  option: set option for server (for boolean option, value can be omitted)
+2023-09-29 21:14:01		nooption: set boolean option to 'off' (for example: -nossl)
+2023-09-29 21:14:01		    copy: duplicate a server
+2023-09-29 21:14:01		  rename: rename a server
+2023-09-29 21:14:01		 reorder: reorder list of servers
+2023-09-29 21:14:01		    open: open the server buffer without connecting
+2023-09-29 21:14:01		    keep: keep server in config file (for temporary servers only)
+2023-09-29 21:14:01		     del: delete a server
+2023-09-29 21:14:01		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2023-09-29 21:14:01		    jump: jump to server buffer
+2023-09-29 21:14:01		     raw: open buffer with raw IRC data
+2023-09-29 21:14:01		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2023-09-29 21:14:01		            *       show all messages (no filter)
+2023-09-29 21:14:01		            xxx     show only messages containing "xxx"
+2023-09-29 21:14:01		            s:xxx   show only messages for server "xxx"
+2023-09-29 21:14:01		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2023-09-29 21:14:01		            m:xxx   show only IRC command "xxx"
+2023-09-29 21:14:01		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2023-09-29 21:14:01		Examples:
+2023-09-29 21:14:01		  /server listfull
+2023-09-29 21:14:01		  /server add freenode chat.freenode.net
+2023-09-29 21:14:01		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2023-09-29 21:14:01		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2023-09-29 21:14:01		  /server copy freenode freenode-test
+2023-09-29 21:14:01		  /server rename freenode-test freenode2
+2023-09-29 21:14:01		  /server reorder freenode2 freenode
+2023-09-29 21:14:01		  /server del freenode
+2023-09-29 21:14:01		  /server deloutq
+2023-09-29 21:14:01		  /server raw
+2023-09-29 21:14:01		  /server raw s:freenode
+2023-09-29 21:14:01		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2023-09-29 21:14:08	=!=	Too few arguments for command "/server add" (help on command: /help server)
+2023-09-29 21:14:33		irc: server added: freenode
+2023-09-29 21:14:42		All servers:
+2023-09-29 21:14:42		   freenode
+2023-09-29 21:14:46	=!=	Error: unknown command "/freenode" (type /help for help)
+2023-09-29 21:14:53	=!=	You can not write text in this buffer
+2023-09-29 21:15:00	=!=	Error with command "/server connect freenode" (help on command: /help server)
+2023-09-29 21:15:06		[irc]  /server  list|listfull [<name>]
+2023-09-29 21:15:06		                add <name> <hostname>[/<port>] [-temp] [-<option>[=<value>]] [-no<option>]
+2023-09-29 21:15:06		                copy|rename <name> <new_name>
+2023-09-29 21:15:06		                reorder <name> [<name>...]
+2023-09-29 21:15:06		                open <name>|-all [<name>...]
+2023-09-29 21:15:06		                del|keep <name>
+2023-09-29 21:15:06		                deloutq|jump
+2023-09-29 21:15:06		                raw [<filter>]
+2023-09-29 21:15:06		list, add or remove IRC servers
+2023-09-29 21:15:06		    list: list servers (without argument, this list is displayed)
+2023-09-29 21:15:06		listfull: list servers with detailed info for each server
+2023-09-29 21:15:06		     add: add a new server
+2023-09-29 21:15:06		    name: server name, for internal and display use; this name is used to connect to the server (/connect name) and to set server options: irc.server.name.xxx
+2023-09-29 21:15:06		hostname: name or IP address of server, with optional port (default: 6667), many addresses can be separated by a comma
+2023-09-29 21:15:06		   -temp: add a temporary server (not saved)
+2023-09-29 21:15:06		  option: set option for server (for boolean option, value can be omitted)
+2023-09-29 21:15:06		nooption: set boolean option to 'off' (for example: -nossl)
+2023-09-29 21:15:06		    copy: duplicate a server
+2023-09-29 21:15:06		  rename: rename a server
+2023-09-29 21:15:06		 reorder: reorder list of servers
+2023-09-29 21:15:06		    open: open the server buffer without connecting
+2023-09-29 21:15:06		    keep: keep server in config file (for temporary servers only)
+2023-09-29 21:15:06		     del: delete a server
+2023-09-29 21:15:06		 deloutq: delete messages out queue for all servers (all messages WeeChat is currently sending)
+2023-09-29 21:15:06		    jump: jump to server buffer
+2023-09-29 21:15:06		     raw: open buffer with raw IRC data
+2023-09-29 21:15:06		  filter: set a new filter to see only matching messages (this filter can be used as input in raw IRC data buffer as well); allowed formats are:
+2023-09-29 21:15:06		            *       show all messages (no filter)
+2023-09-29 21:15:06		            xxx     show only messages containing "xxx"
+2023-09-29 21:15:06		            s:xxx   show only messages for server "xxx"
+2023-09-29 21:15:06		            f:xxx   show only messages with a flag: recv (message received), sent (message sent), modified (message modified by a modifier), redirected (message redirected)
+2023-09-29 21:15:06		            m:xxx   show only IRC command "xxx"
+2023-09-29 21:15:06		            c:xxx   show only messages matching the evaluated condition "xxx", using following variables: output of function irc_message_parse (like nick, command, channel, text, etc., see function info_get_hashtable in plugin API reference for the list of all variables), date (format: "yyyy-mm-dd hh:mm:ss"), server, recv, sent, modified, redirected
+2023-09-29 21:15:06		Examples:
+2023-09-29 21:15:06		  /server listfull
+2023-09-29 21:15:06		  /server add freenode chat.freenode.net
+2023-09-29 21:15:06		  /server add freenode chat.freenode.net/6697 -ssl -autoconnect
+2023-09-29 21:15:06		  /server add chatspike irc.chatspike.net/6667,irc.duckspike.net/6667
+2023-09-29 21:15:06		  /server copy freenode freenode-test
+2023-09-29 21:15:06		  /server rename freenode-test freenode2
+2023-09-29 21:15:06		  /server reorder freenode2 freenode
+2023-09-29 21:15:06		  /server del freenode
+2023-09-29 21:15:06		  /server deloutq
+2023-09-29 21:15:06		  /server raw
+2023-09-29 21:15:06		  /server raw s:freenode
+2023-09-29 21:15:06		  /server raw c:${recv} && ${command}==PRIVMSG && ${nick}==foo
+2023-09-29 21:15:39	=!=	irc: server "freenode" already exists, can't add it!
+2023-09-29 21:15:59	=!=	Error with command "/server freenode connect" (help on command: /help server)
+2023-09-29 21:16:08		irc: server freenode has been deleted
+2023-09-29 21:16:35		irc: server added: freenode
+2023-09-29 21:16:40		All servers:
+2023-09-29 21:16:40		   freenode
+2023-09-29 21:16:44	=!=	Error: unknown command "/freenode" (type /help for help)
+2023-09-29 21:16:48	=!=	Error with command "/server freenode list" (help on command: /help server)
+2023-09-29 21:16:53	=!=	Error with command "/server freenode help" (help on command: /help server)
+2023-09-29 21:17:12	=!=	Error: unknown command "/identify" (type /help for help)
+2023-09-29 21:17:18		[core]
+2023-09-29 21:17:18		  away     input    save   
+2023-09-29 21:17:18		  bar      key      secure 
+2023-09-29 21:17:18		  buffer   layout   set    
+2023-09-29 21:17:18		  color    mouse    unset  
+2023-09-29 21:17:18		  command  mute     upgrade
+2023-09-29 21:17:18		  cursor   plugin   uptime 
+2023-09-29 21:17:18		  debug    print    version
+2023-09-29 21:17:18		  eval     proxy    wait   
+2023-09-29 21:17:18		  filter   quit     window 
+2023-09-29 21:17:18		  help     reload 
+2023-09-29 21:17:18		  history  repeat 
+2023-09-29 21:17:18		[python]
+2023-09-29 21:17:18		  python
+2023-09-29 21:17:18		[fifo]
+2023-09-29 21:17:18		  fifo
+2023-09-29 21:17:18		[exec]
+2023-09-29 21:17:18		  exec
+2023-09-29 21:17:18		[charset]
+2023-09-29 21:17:18		  charset
+2023-09-29 21:17:18		[xfer]
+2023-09-29 21:17:18		  me  xfer
+2023-09-29 21:17:18		[relay]
+2023-09-29 21:17:18		  relay
+2023-09-29 21:17:18		[script]
+2023-09-29 21:17:18		  script
+2023-09-29 21:17:18		[spell]
+2023-09-29 21:17:18		  spell
+2023-09-29 21:17:18		[logger]
+2023-09-29 21:17:18		  logger
+2023-09-29 21:17:18		[buflist]
+2023-09-29 21:17:18		  buflist
+2023-09-29 21:17:18		[fset]
+2023-09-29 21:17:18		  fset
+2023-09-29 21:17:18		[perl]
+2023-09-29 21:17:18		  perl
+2023-09-29 21:17:18		[alias]
+2023-09-29 21:17:18		  AAWAY    J        SIGNOFF
+2023-09-29 21:17:19		  alias    K        T      
+2023-09-29 21:17:19		  ANICK    KB       UB     
+2023-09-29 21:17:19		  BEEP     LEAVE    UMODE  
+2023-09-29 21:17:19		  BYE      M        V      
+2023-09-29 21:17:19		  C        MSGBUF   W      
+2023-09-29 21:17:19		  CHAT     MUB      WC     
+2023-09-29 21:17:19		  CL       N        WI     
+2023-09-29 21:17:19		  CLOSE    Q        WII    
+2023-09-29 21:17:19		  EXIT     REDRAW   WM     
+2023-09-29 21:17:19		  IG       SAY      WW     
+2023-09-29 21:17:19		[ruby]
+2023-09-29 21:17:19		  ruby
+2023-09-29 21:17:19		[irc]
+2023-09-29 21:17:19		  admin       oper      
+2023-09-29 21:17:19		  allchan     part      
+2023-09-29 21:17:19		  allpv       ping      
+2023-09-29 21:17:19		  allserv     pong      
+2023-09-29 21:17:19		  ban         query     
+2023-09-29 21:17:19		  cap         quiet     
+2023-09-29 21:17:19		  connect     quote     
+2023-09-29 21:17:19		  ctcp        reconnect 
+2023-09-29 21:17:19		  cycle       rehash    
+2023-09-29 21:17:19		  dcc         remove    
+2023-09-29 21:17:19		  dehalfop    restart   
+2023-09-29 21:17:19		  deop        sajoin    
+2023-09-29 21:17:19		  devoice     samode    
+2023-09-29 21:17:19		  die         sanick    
+2023-09-29 21:17:19		  disconnect  sapart    
+2023-09-29 21:17:19		  halfop      saquit    
+2023-09-29 21:17:19		  ignore      server    
+2023-09-29 21:17:19		  info        service   
+2023-09-29 21:17:19		  invite      servlist  
+2023-09-29 21:17:19		  ison        squery    
+2023-09-29 21:17:19		  join        squit     
+2023-09-29 21:17:19		  kick        stats     
+2023-09-29 21:17:19		  kickban     summon    
+2023-09-29 21:17:19		  kill        time      
+2023-09-29 21:17:19		  links       topic     
+2023-09-29 21:17:19		  list        trace     
+2023-09-29 21:17:19		  lusers      unban     
+2023-09-29 21:17:19		  map         unquiet   
+2023-09-29 21:17:19		  me          userhost  
+2023-09-29 21:17:19		  mode        users     
+2023-09-29 21:17:19		  motd        version   
+2023-09-29 21:17:19		  msg         voice     
+2023-09-29 21:17:19		  names       wallchops 
+2023-09-29 21:17:19		  nick        wallops   
+2023-09-29 21:17:19		  notice      who       
+2023-09-29 21:17:19		  notify      whois     
+2023-09-29 21:17:19		  op          whowas    
+2023-09-29 21:17:19		[trigger]
+2023-09-29 21:17:19		  trigger
+2023-09-29 21:17:51	=!=	Error: unknown command "/luser" (type /help for help)
+2023-09-29 21:23:22		[core]
+2023-09-29 21:23:22		  away   
+2023-09-29 21:23:22		  bar    
+2023-09-29 21:23:22		  buffer 
+2023-09-29 21:23:22		  color  
+2023-09-29 21:23:22		  command
+2023-09-29 21:23:22		  cursor 
+2023-09-29 21:23:22		  debug  
+2023-09-29 21:23:22		  eval   
+2023-09-29 21:23:22		  filter 
+2023-09-29 21:23:22		  help   
+2023-09-29 21:23:22		  history
+2023-09-29 21:23:22		  input  
+2023-09-29 21:23:22		  key    
+2023-09-29 21:23:22		  layout 
+2023-09-29 21:23:22		  mouse  
+2023-09-29 21:23:22		  mute   
+2023-09-29 21:23:22		  plugin 
+2023-09-29 21:23:22		  print  
+2023-09-29 21:23:22		  proxy  
+2023-09-29 21:23:22		  quit   
+2023-09-29 21:23:22		  reload 
+2023-09-29 21:23:22		  repeat 
+2023-09-29 21:23:22		  save   
+2023-09-29 21:23:22		  secure 
+2023-09-29 21:23:22		  set    
+2023-09-29 21:23:22		  unset  
+2023-09-29 21:23:22		  upgrade
+2023-09-29 21:23:22		  uptime 
+2023-09-29 21:23:22		  version
+2023-09-29 21:23:22		  wait   
+2023-09-29 21:23:22		  window 
+2023-09-29 21:23:22		[python]
+2023-09-29 21:23:22		  python
+2023-09-29 21:23:22		[fifo]
+2023-09-29 21:23:22		  fifo
+2023-09-29 21:23:22		[exec]
+2023-09-29 21:23:22		  exec
+2023-09-29 21:23:22		[charset]
+2023-09-29 21:23:22		  charset
+2023-09-29 21:23:22		[xfer]
+2023-09-29 21:23:22		  me  xfer
+2023-09-29 21:23:22		[relay]
+2023-09-29 21:23:22		  relay
+2023-09-29 21:23:22		[script]
+2023-09-29 21:23:22		  script
+2023-09-29 21:23:22		[spell]
+2023-09-29 21:23:22		  spell
+2023-09-29 21:23:22		[logger]
+2023-09-29 21:23:22		  logger
+2023-09-29 21:23:22		[buflist]
+2023-09-29 21:23:22		  buflist
+2023-09-29 21:23:22		[fset]
+2023-09-29 21:23:22		  fset
+2023-09-29 21:23:22		[perl]
+2023-09-29 21:23:22		  perl
+2023-09-29 21:23:22		[alias]
+2023-09-29 21:23:22		  AAWAY  
+2023-09-29 21:23:22		  alias  
+2023-09-29 21:23:22		  ANICK  
+2023-09-29 21:23:22		  BEEP   
+2023-09-29 21:23:22		  BYE    
+2023-09-29 21:23:22		  C      
+2023-09-29 21:23:22		  CHAT   
+2023-09-29 21:23:22		  CL     
+2023-09-29 21:23:22		  CLOSE  
+2023-09-29 21:23:22		  EXIT   
+2023-09-29 21:23:23		  IG     
+2023-09-29 21:23:23		  J      
+2023-09-29 21:23:23		  K      
+2023-09-29 21:23:23		  KB     
+2023-09-29 21:23:23		  LEAVE  
+2023-09-29 21:23:23		  M      
+2023-09-29 21:23:23		  MSGBUF 
+2023-09-29 21:23:23		  MUB    
+2023-09-29 21:23:23		  N      
+2023-09-29 21:23:23		  Q      
+2023-09-29 21:23:23		  REDRAW 
+2023-09-29 21:23:23		  SAY    
+2023-09-29 21:23:23		  SIGNOFF
+2023-09-29 21:23:23		  T      
+2023-09-29 21:23:23		  UB     
+2023-09-29 21:23:23		  UMODE  
+2023-09-29 21:23:23		  V      
+2023-09-29 21:23:23		  W      
+2023-09-29 21:23:23		  WC     
+2023-09-29 21:23:23		  WI     
+2023-09-29 21:23:23		  WII    
+2023-09-29 21:23:23		  WM     
+2023-09-29 21:23:23		  WW     
+2023-09-29 21:23:23		[ruby]
+2023-09-29 21:23:23		  ruby
+2023-09-29 21:23:23		[irc]
+2023-09-29 21:23:23		  admin     
+2023-09-29 21:23:23		  allchan   
+2023-09-29 21:23:23		  allpv     
+2023-09-29 21:23:23		  allserv   
+2023-09-29 21:23:23		  ban       
+2023-09-29 21:23:23		  cap       
+2023-09-29 21:23:23		  connect   
+2023-09-29 21:23:23		  ctcp      
+2023-09-29 21:23:23		  cycle     
+2023-09-29 21:23:23		  dcc       
+2023-09-29 21:23:23		  dehalfop  
+2023-09-29 21:23:23		  deop      
+2023-09-29 21:23:23		  devoice   
+2023-09-29 21:23:23		  die       
+2023-09-29 21:23:23		  disconnect
+2023-09-29 21:23:23		  halfop    
+2023-09-29 21:23:23		  ignore    
+2023-09-29 21:23:23		  info      
+2023-09-29 21:23:23		  invite    
+2023-09-29 21:23:23		  ison      
+2023-09-29 21:23:23		  join      
+2023-09-29 21:23:23		  kick      
+2023-09-29 21:23:23		  kickban   
+2023-09-29 21:23:23		  kill      
+2023-09-29 21:23:23		  links     
+2023-09-29 21:23:23		  list      
+2023-09-29 21:23:23		  lusers    
+2023-09-29 21:23:23		  map       
+2023-09-29 21:23:23		  me        
+2023-09-29 21:23:23		  mode      
+2023-09-29 21:23:23		  motd      
+2023-09-29 21:23:23		  msg       
+2023-09-29 21:23:23		  names     
+2023-09-29 21:23:23		  nick      
+2023-09-29 21:23:23		  notice    
+2023-09-29 21:23:23		  notify    
+2023-09-29 21:23:23		  op        
+2023-09-29 21:23:23		  oper      
+2023-09-29 21:23:23		  part      
+2023-09-29 21:23:23		  ping      
+2023-09-29 21:23:23		  pong      
+2023-09-29 21:23:23		  query     
+2023-09-29 21:23:23		  quiet     
+2023-09-29 21:23:23		  quote     
+2023-09-29 21:23:23		  reconnect 
+2023-09-29 21:23:23		  rehash    
+2023-09-29 21:23:23		  remove    
+2023-09-29 21:23:23		  restart   
+2023-09-29 21:23:23		  sajoin    
+2023-09-29 21:23:23		  samode    
+2023-09-29 21:23:23		  sanick    
+2023-09-29 21:23:23		  sapart    
+2023-09-29 21:23:23		  saquit    
+2023-09-29 21:23:23		  server    
+2023-09-29 21:23:23		  service   
+2023-09-29 21:23:23		  servlist  
+2023-09-29 21:23:23		  squery    
+2023-09-29 21:23:23		  squit     
+2023-09-29 21:23:23		  stats     
+2023-09-29 21:23:23		  summon    
+2023-09-29 21:23:23		  time      
+2023-09-29 21:23:23		  topic     
+2023-09-29 21:23:23		  trace     
+2023-09-29 21:23:23		  unban     
+2023-09-29 21:23:23		  unquiet   
+2023-09-29 21:23:23		  userhost  
+2023-09-29 21:23:23		  users     
+2023-09-29 21:23:23		  version   
+2023-09-29 21:23:23		  voice     
+2023-09-29 21:23:23		  wallchops 
+2023-09-29 21:23:23		  wallops   
+2023-09-29 21:23:23		  who       
+2023-09-29 21:23:23		  whois     
+2023-09-29 21:23:23		  whowas    
+2023-09-29 21:23:23		[trigger]
+2023-09-29 21:23:23		  trigger
+2023-09-29 21:35:16		Plugins loaded: alias, buflist, charset, exec, fifo, fset, irc, logger, perl, python, relay, ruby, script, spell, trigger, xfer
