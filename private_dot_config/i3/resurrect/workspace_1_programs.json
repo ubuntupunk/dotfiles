@@ -1,0 +1,26 @@
+[
+  {
+    "command": [
+      "/home/afropunk/.cargo/bin/alacritty"
+    ],
+    "working_directory": "/home/afropunk"
+  },
+  {
+    "command": [
+      "/home/afropunk/.cargo/bin/alacritty"
+    ],
+    "working_directory": "/home/afropunk/.config/rofi/bin"
+  },
+  {
+    "command": [
+      "/home/afropunk/.cargo/bin/alacritty"
+    ],
+    "working_directory": "/home/afropunk"
+  },
+  {
+    "command": [
+      "/home/afropunk/.cargo/bin/alacritty"
+    ],
+    "working_directory": "/home/afropunk/.config/rofi"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "command": [
+      "urxvt"
+    ],
+    "working_directory": "/home/afropunk"
+  },
+  {
+    "command": [
+      "urxvt"
+    ],
+    "working_directory": "/home/afropunk"
+  },
+  {
+    "command": [
+      "urxvt"
+    ],
+    "working_directory": "/home/afropunk"
+  }
+]
