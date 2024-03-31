@@ -1,0 +1,4 @@
+#get my top 30 github starred repo
+ghstar() {
+gh api user/starred --template '{{range .}}{{.full_name|color "yellow"}} ({{timeago .updated_at}}){{"\n"}}{{end}}'
+}
