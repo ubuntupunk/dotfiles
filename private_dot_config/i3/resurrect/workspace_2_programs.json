@@ -1,0 +1,9 @@
+[
+  {
+    "command": [
+      "/opt/vivaldi/vivaldi-bin",
+      "--enable-crashpad"
+    ],
+    "working_directory": "/home/afropunk"
+  }
+]

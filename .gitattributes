@@ -1,1 +1,2 @@
 dot_bash_aliases filter=crypt diff=crypt merge=crypt
+private_dit_config/i3/config.toml filter=crypt diff=crypt merge=crypt
