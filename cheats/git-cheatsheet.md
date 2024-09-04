@@ -1,3 +1,8 @@
+---
+author: DavDev
+highlight-style: tango
+---
+
 Keep a forked repository in sync
 ================================
 
