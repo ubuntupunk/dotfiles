@@ -1,5 +1,5 @@
 ---
-author: Cyril Andreatta
+author: DavDev
 highlight-style: tango
 ---
 
@@ -19,7 +19,7 @@ ping ff02::1%enp0s25
 ```
 
 # convert images
-http://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/
+see (http://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/)
 
 # width 200
 ```bash
@@ -27,18 +27,21 @@ convert example.png -resize 200 example.png
 ```
 
 # height 200
+```bash
 convert example.png -resize 200 example.png
-
+```
 # exact size
+```bash
 convert example.png -resize 200×100! example.png
-
+```
 # find
 
 ## executables under current path
+```bash
 find . -type f -executable -print
-
-## delete files with any of given extensions
 ```
+## delete files with any of given extensions
+```bash
 	find -iregex '.*\.\(db\|wma\|ini\|txt\)$'
 ```
 
@@ -47,102 +50,114 @@ find . -mindepth 2 -type d -exec mv {} . \;
 ```
 
 # netcat receive hexadecimal values
+```bash
 nc -l -p <PORT> | xxd
-
+```
 # list available fonts:
+```bash
 fc-list
-
+```
 # reload font cache
+```bash
 fc-cache -f -v
-
+```
 # check integrity of /etc/passwd
+```bash
 pwck
-
+```
 # fix /etc/passwd (say yes on prompt)
+```bash
 grpck
-
+```
 # convert jpg to png (with imagemagick)
+```bash
 convert picture.{jpg,png}
 convert -resize 50% picture.png picture.png
 convert example.png -resize 200×100 example.png
 convert example.png -resize x100 example.png
 convert example.jpg -rotate 90 example-rotated.jpg
-
+```
 # base64
+```bash
 base64 -d <<< <BASE64STRING>
-
+```
 # bash: reuse last parameter
+```bash
 !$ # or $_
-
+```
 # get more than one parameter
+```bash
 !:1-2
-
+```
 # show what takes so long to boot
+```bash
 systemd-analyze blame
-
+```
 # delete (Xth) specific line from file
 # good if SSH key has changed
+```bash
 sed -i 'Xd' ~/.ssh/known_hosts
-
+```
 # get external IP
+```bash
 wget -q -O - http://showip.spamt.net/
-
+```
 # play DVDs
-sudo pacman -S libdvdcss libdvdread libdvdnav
-
+```bash
+sudo apt install ubuntu-restricted-extras libdvd-pkg libdvdnav4
+```
 # add user to additional group
+```bash
 usermod -aG <GROUP> $USER
-
-# pacman
-# add GPG key to be able to install from AUR
+```
+# add GPG key to be able to install via apt
+```bash
 gpg --recv-keys KEYID
-
-# EFI stub
-
-# list current boot menu
-bootmgr -v
-
-# remove entry from menu
-efibootmgr -B -b<hex>
-
-# add entry to EFI stub boot menu
-efibootmgr -d /dev/sdX -p Y -c -L "Arch Linux" -l /vmlinuz-linux -u "root=/dev/sda2 rw initrd=/initramfs-linux.img"
-# Where X and Y are changed to reflect the disk and partition where the ESP is located. Change the root= parameter to reflect your Linux root (disk UUIDs can also be used).
-sudo efibootmgr -d /dev/sda -p 1 -c -L "Arch 4.0.5" -l /vmlinuz-linux-405 -u "root=/dev/sda2 rm initrd=/initramfs-linux.img"
-
+```
 # IP address handling
 
 # set static IP
+```bash
 ip addr add 192.168.112.111/24 dev enp0s25
-
+```
 # remove IP address
+```bash
 ip addr delete 192.168.112.111/24 dev enp0s25
-
+```
 # replace IP
+```bash
 ip addr replace 192.168.112.112/24 dev enp0s25
-
+```
 # TMUX
 # pairing sessions over SSH
 # create socket to share and set rights
+```bash
 tmux -S /tmp/tmux new -d -s pair
 chmod 777 /tmp/tmux
-
+```
 # connect to shared socket from other device (over ssh)
+```bash
 tmux -S /tmp/tmux attach
-
+```
 # SAMBA
 # list directories
+```bash
 smbclient -L <SERVER>
-
+```
 # connect
+```bash
 smbclient '\\<SERVER>\<FOLDER>' -U 'DOMAIN\USERNAME'
-
+```
 # NFS
 # list NFS shares on server
+```bash
 showmount -e <SERVER-IP>
-
+```
 # mount NFS share
+```bash
 sudo mount -t nfs <SERVER>:<PATH> </mountpoint/on/client>
-
+```
 # mount ISO image
+```bash
 mount -o loop -t iso9660 filename.iso /mnt/iso
+```
