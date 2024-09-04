@@ -19,7 +19,7 @@ ping ff02::1%enp0s25
 ```
 
 # convert images
-see (http://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/)
+[see howtogeek tutorial](http://www.howtogeek.com/109369/how-to-quickly-resize-convert-modify-images-from-the-linux-terminal/)
 
 # width 200
 ```bash
