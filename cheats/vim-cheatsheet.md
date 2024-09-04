@@ -1,4 +1,9 @@
-VIM Tipps'n'Tricks
+---
+author: DavDev
+highlight-style: tango
+---
+
+VIM Cheats
 ==================
 
 # Misc tips
